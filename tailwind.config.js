@@ -10,6 +10,11 @@ module.exports = {
       textColor: {
         skin: {},
       },
+      fontFamily: {
+        "nanum-gothic": ["Nanum Gothic", "sans-serif"],
+        cairo: ["Cairo", "sans-serif"],
+        "source-sans-pro": ["Source Sans Pro", "sans-serif"],
+      },
     },
   },
   plugins: [],
