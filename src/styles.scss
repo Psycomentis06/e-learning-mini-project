@@ -1,4 +1,6 @@
+@use "./variables";
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Nanum+Gothic&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+
 body {
     font-family:  'Nanum Gothic', 'Cairo','Source Sans Pro', sans-serif;
 }
@@ -11,13 +13,13 @@ body {
 @layer base {
     :root {
         // default Tailwind skin | theme
-        --color-accent-text: #882909;
-        --color-accent-bg: #EB751F;
-        --color-accent-hover: #FEEED1;
-        --color-accent-inverted: #F9BC77;
-        --color-success: #78E549;
-        --color-success-inverted: #DAFCB7;
-        --color-success-text: #228417;
-        --color-success-bg: #BEF792;
+        --color-accent-text: #{variables.$color-accent-text};
+        --color-accent-bg: #{variables.$color-accent-bg};
+        --color-accent-hover: #{variables.$color-accent-hover};
+        --color-accent-inverted: #{variables.$color-accent-inverted};
+        --color-success: #{variables.$color-success};
+        --color-success-inverted: #{variables.$color-success-inverted};
+        --color-success-text: #{variables.$color-success-text};
+        --color-success-bg: #{variables.$color-success-bg};
     }
 }
