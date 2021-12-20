@@ -4,7 +4,7 @@ const skinColorOpacity = ({ opacityValue }, varName) => {
 }
 
 module.exports = {
-  content: ["./src/**/*.{html,js,ts}"],
+  content: ["./src/**/*.{html,js,ts, css, scss}"],
   theme: {
     extend: {
       textColor: {
