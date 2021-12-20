@@ -4,7 +4,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LogoComponent } from './components/logo/logo.component';
-
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 
 
 @NgModule({
@@ -15,7 +15,8 @@ import { LogoComponent } from './components/logo/logo.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FontAwesomeModule
   ],
   exports: [
     LayoutComponent
