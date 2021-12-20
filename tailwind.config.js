@@ -4,14 +4,12 @@ const skinColorOpacity = ({ opacityValue }, varName) => {
 }
 
 module.exports = {
-  content: ["./src/**/*.{html,js,ts, css, scss}"],
+  content: ["./public/**/*.html", "./src/**/*.{html,js,ts}"],
   theme: {
     extend: {
       textColor: {
-        skin: {
-          
-        }
-      }
+        skin: {},
+      },
     },
   },
   plugins: [],
