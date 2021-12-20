@@ -1,0 +1,39 @@
+@use "/src/variables";
+.main-navbar {
+  .nav-link-container {
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background-color: #{variables.$color-accent-text};
+      opacity: 0.1;
+      background: radial-gradient(
+          circle,
+          transparent 20%,
+          #{variables.$color-accent-text} 20%,
+          #{variables.$color-accent-text} 80%,
+          transparent 80%,
+          transparent
+        ),
+        radial-gradient(
+            circle,
+            transparent 20%,
+            #{variables.$color-accent-text} 20%,
+            #{variables.$color-accent-text} 80%,
+            transparent 80%,
+            transparent
+          )
+          100px 100px,
+        linear-gradient(#{variables.$color-accent-bg} 8px, transparent 8px) 0 -4px,
+        linear-gradient(90deg, #{variables.$color-accent-bg} 8px, #{variables.$color-accent-text} 8px) -4px 0;
+      background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+    }
+    ul {
+      z-index: 1;
+    }
+  }
+}
