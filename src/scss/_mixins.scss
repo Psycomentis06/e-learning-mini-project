@@ -1,0 +1,62 @@
+@use "./themes";
+@use "./variables";
+
+@mixin sm {
+    @media (max-width: variables.$sm) {
+        @content
+    }
+}
+@mixin md {
+    @media (max-width: variables.$md) {
+        @content
+    }
+}
+@mixin lg {
+    @media (max-width: variables.$lg) {
+        @content
+    }
+}
+@mixin xl {
+    @media (max-width: variables.$xl) {
+        @content
+    }
+}
+@mixin xl2 {
+    @media (max-width: variables.$xl2) {
+        @content
+    }
+}
+
+@mixin backgroundColor($iconsColor:themes.$color-accent-text, $bgColor:themes.$color-accent-bg) {
+        &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background-color: #{themes.$color-accent-text};
+      opacity: 0.1;
+      background: radial-gradient(
+          circle,
+          transparent 20%,
+          #{themes.$color-accent-text} 20%,
+          #{themes.$color-accent-text} 80%,
+          transparent 80%,
+          transparent
+        ),
+        radial-gradient(
+            circle,
+            transparent 20%,
+            #{themes.$color-accent-text} 20%,
+            #{themes.$color-accent-text} 80%,
+            transparent 80%,
+            transparent
+          )
+          100px 100px,
+        linear-gradient(#{themes.$color-accent-bg} 8px, transparent 8px) 0 -4px,
+        linear-gradient(90deg, #{themes.$color-accent-bg} 8px, #{themes.$color-accent-text} 8px) -4px 0;
+      background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+    }
+}
