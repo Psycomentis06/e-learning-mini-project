@@ -1,59 +1,55 @@
-<div class="h-[80px] bg-white w-full flex flex-row items-center main-navbar">
+<div class="h-[70px] bg-white w-full flex flex-row items-center main-navbar lg:bg-black">
   <div class="flex justify-between w-full">
-    <h3 class="text-2xl font-semibold text-pink-500">E-Learning</h3>
-    <button class="bg-pink-100 text-pink-700 px-2 py-1 mr-3 rounded-md outline-hidden outline-offset-1 outline-pink-400 focus:outline  transition duration-150">
+    <h3 class="text-2xl font-semibold text-pink-500 mx-2">E-Learning</h3>
+    <button (click)="navbarService.open()" class="bg-pink-100 text-pink-700 px-2 py-1 mr-3 rounded-md outline-hidden outline-offset-1 outline-pink-400 focus:outline  transition duration-150 lg:hidden">
       <fa-icon [icon]="faBars" size="lg" class="text-pink-500"></fa-icon>
     </button>
   </div>
-  <div class="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75">
+  <div (click)="navbarService.close()"  [ngClass]="(navbarMenu|async) ? 'fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75' : 'bg-opacity-0' " class="transition duration-200 lg:hidden">
     <!-- overlay -->
   </div>
   <div
-    class="
-      h-screen
-      absolute
-      top-0
-      left-0
-      bg-pink-900
-      shadow-lg
-      flex
-      items-start
-      nav-link-container
-    "
+    [ngClass]="(navbarMenu|async) ? 'left-0' : 'left-[-250px]'"
+    class="min-h-screen absolute bg-pink-900 shadow-lg flex flex-row top-0 items-start nav-link-container transition duration-700 lg:relative lg:flex-col lg:w-full lg:h-full lg:items-center lg:bg-inherit lg:min-h-full"
   >
     <ul
       class="
         flex flex-col
+        lg:flex-row
         justify-around
+        lg:items-center
         w-[250px]
+        lg:w-full
         h-[500px]
+        lg:h-full
         text-pink-100 text-xl
         px-3
         py-2
         font-source-sans-pro font-semibold
         divide-y-2 divide-pink-800
+        lg:divide-none
       "
     >
-      <li class="text-sm font-bold font-nanum-gothic">
+      <li class="text-sm font-bold font-nanum-gothic lg:font-source-sans-pro lg:font-thin">
           <!-- Close menu button -->
-        <button class="flex items-center bg-pink-100 text-pink-600 shadow-pink-100 shadow-sm px-2 py-1 rounded-lg hover:bg-pink-200 transition duration-150 focus:outline-pink-500 outline-offset-1  outline-hidden focus:bg-pink-200">
+        <button (click)="navbarService.close()" class=" lg:hidden flex items-center bg-pink-100 text-pink-600 shadow-pink-100 shadow-sm px-2 py-1 rounded-lg hover:bg-pink-200 transition duration-150 focus:outline-pink-500 outline-offset-1  outline-hidden focus:bg-pink-200">
             <fa-icon [icon]="faAngleLeft" size="lg"></fa-icon>
             Close menu
         </button>
       </li>
-      <li class="hover:text-pink-300 transition duration-100">
+      <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white transition duration-100">
         <a href="#">Lessons</a>
       </li>
-      <li class="hover:text-pink-300 transition duration-100">
+      <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white  transition duration-100">
         <a href="#">Pricing</a>
       </li>
-      <li class="hover:text-pink-300 transition duration-100">
+      <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white  transition duration-100">
         <a href="#">Support</a>
       </li>
-      <li class="hover:text-pink-300 transition duration-100">
+      <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white  transition duration-100">
         <a href="#">About</a>
       </li>
-      <li >
+      <li class="lg:hidden mb-[50px]">
         <span>Categories</span>
         <div class="flex items-start flex-wrap" >  
         <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
@@ -67,4 +63,12 @@
         </li>
     </ul>
   </div>
+  <ul class="z-50 fixed bottom-0 left-0 right-0 bg-pink-800 flex justify-around items-center h-[50px] text-white text-sm lg:relative lg:h-full lg:w-[550px] lg:bg-transparent">
+      <!-- Actions -->
+      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear">
+        Search
+      </li>
+      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear">Sign in</li>
+      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear">bookmarks</li>
+    </ul>
 </div>
