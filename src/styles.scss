@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./scss/themes";
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Nanum+Gothic&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
 
 body {
@@ -13,13 +13,13 @@ body {
 @layer base {
     :root {
         // default Tailwind skin | theme
-        --color-accent-text: #{variables.$color-accent-text};
-        --color-accent-bg: #{variables.$color-accent-bg};
-        --color-accent-hover: #{variables.$color-accent-hover};
-        --color-accent-inverted: #{variables.$color-accent-inverted};
-        --color-success: #{variables.$color-success};
-        --color-success-inverted: #{variables.$color-success-inverted};
-        --color-success-text: #{variables.$color-success-text};
-        --color-success-bg: #{variables.$color-success-bg};
+        --color-accent-text: #{themes.$color-accent-text};
+        --color-accent-bg: #{themes.$color-accent-bg};
+        --color-accent-hover: #{themes.$color-accent-hover};
+        --color-accent-inverted: #{themes.$color-accent-inverted};
+        --color-success: #{themes.$color-success};
+        --color-success-inverted: #{themes.$color-success-inverted};
+        --color-success-text: #{themes.$color-success-text};
+        --color-success-bg: #{themes.$color-success-bg};
     }
 }
