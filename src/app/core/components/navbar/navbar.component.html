@@ -38,16 +38,16 @@
         </button>
       </li>
       <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white transition duration-100">
-        <a href="#">Lessons</a>
+        <a routerLink="lessons" routerLinkActive="text-pink-600 decoration-white">Lessons</a>
       </li>
       <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white  transition duration-100">
-        <a href="#">Pricing</a>
+        <a routerLink="pricing" routerLinkActive="text-pink-600 decoration-white">Pricing</a>
       </li>
       <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white  transition duration-100">
-        <a href="#">Support</a>
+        <a routerLink="support" routerLinkActive="text-pink-600 decoration-white">Support</a>
       </li>
       <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white  transition duration-100">
-        <a href="#">About</a>
+        <a routerLink="about" routerLinkActive="text-pink-600 decoration-white">About</a>
       </li>
       <li class="lg:hidden mb-[50px]">
         <span>Categories</span>
@@ -65,7 +65,7 @@
   </div>
   <ul class="z-50 lg:z-0  fixed bottom-0 left-0 right-0 bg-pink-800 flex justify-around items-center h-[50px] text-white text-sm lg:relative lg:h-full lg:w-[550px] lg:bg-transparent">
       <!-- Actions -->
-      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Search">
+      <li [ngClass]="(searchService.visible|async) ? 'text-pink-600' : '' "  class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Search">
         <button (click)="searchService.show()">
         <fa-icon [icon]="fontAwesomeIcons.faSearch" class="block lg:text-base"></fa-icon>
         <span class="lg:hidden">
