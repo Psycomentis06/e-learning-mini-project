@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class SearchService {
   private $searchVisibilitySubject: BehaviorSubject<boolean>;
-  readonly _searchVisibilityObservable: Observable<boolean>;
+  private  _searchVisibilityObservable: Observable<boolean>;
   constructor() {
     this.$searchVisibilitySubject = new BehaviorSubject<boolean>(false);
     this._searchVisibilityObservable = this.$searchVisibilitySubject.asObservable();
@@ -23,4 +23,10 @@ export class SearchService {
   hide() {
     this.$searchVisibilitySubject.next(false);
   }
+
+  
+  public get visible() : Observable<boolean> {
+    return this._searchVisibilityObservable
+  }
+  
 }
