@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {faBars, faAngleLeft, faSearch, faBookmark, faUser, faPaintBrush} from '@fortawesome/free-solid-svg-icons'
 import { Observable } from 'rxjs';
 import { NavbarService } from '../../service/navbar.service';
+import { SearchService } from '../../service/search.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -18,7 +19,7 @@ export class NavbarComponent implements OnInit {
   }
   
   navbarMenu: Observable<boolean>;
-  constructor(public navbarService: NavbarService) {
+  constructor(public navbarService: NavbarService, public searchService: SearchService) {
     this.navbarMenu = new Observable();
   }
   ngOnInit(): void {
