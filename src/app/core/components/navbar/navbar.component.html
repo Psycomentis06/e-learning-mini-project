@@ -2,10 +2,10 @@
   <div class="flex justify-between w-full">
     <h3 class="text-2xl font-semibold text-pink-500 mx-2">E-Learning</h3>
     <button (click)="navbarService.open()" class="bg-pink-100 text-pink-700 px-2 py-1 mr-3 rounded-md outline-hidden outline-offset-1 outline-pink-400 focus:outline  transition duration-150 lg:hidden">
-      <fa-icon [icon]="faBars" size="lg" class="text-pink-500"></fa-icon>
+      <fa-icon [icon]="fontAwesomeIcons.faBars" size="lg" class="text-pink-500"></fa-icon>
     </button>
   </div>
-  <div (click)="navbarService.close()"  [ngClass]="(navbarMenu|async) ? 'fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75' : 'bg-opacity-0' " class="transition duration-200 lg:hidden">
+  <div (click)="navbarService.close()"  [ngClass]="(navbarMenu|async) ? 'fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 backdrop-blur-md' : 'bg-opacity-0' " class="transition duration-200 lg:hidden">
     <!-- overlay -->
   </div>
   <div
@@ -33,7 +33,7 @@
       <li class="text-sm font-bold font-nanum-gothic lg:font-source-sans-pro lg:font-thin">
           <!-- Close menu button -->
         <button (click)="navbarService.close()" class=" lg:hidden flex items-center bg-pink-100 text-pink-600 shadow-pink-100 shadow-sm px-2 py-1 rounded-lg hover:bg-pink-200 transition duration-150 focus:outline-pink-500 outline-offset-1  outline-hidden focus:bg-pink-200">
-            <fa-icon [icon]="faAngleLeft" size="lg"></fa-icon>
+            <fa-icon [icon]="fontAwesomeIcons.faAngleLeft" size="lg"></fa-icon>
             Close menu
         </button>
       </li>
@@ -52,23 +52,36 @@
       <li class="lg:hidden mb-[50px]">
         <span>Categories</span>
         <div class="flex items-start flex-wrap" >  
-        <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
           <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
           <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
           <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
           <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
           <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
           <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
-          </div>
+          <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
+        </div>
         </li>
     </ul>
   </div>
   <ul class="z-50 fixed bottom-0 left-0 right-0 bg-pink-800 flex justify-around items-center h-[50px] text-white text-sm lg:relative lg:h-full lg:w-[550px] lg:bg-transparent">
       <!-- Actions -->
-      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear">
-        Search
+      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Search">
+        <fa-icon [icon]="fontAwesomeIcons.faSearch" class="block lg:text-base"></fa-icon>
+        <span class="lg:hidden">
+          Search
+        </span>
       </li>
-      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear">Sign in</li>
-      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear">bookmarks</li>
+      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Sign In">
+        <fa-icon [icon]="fontAwesomeIcons.faUser" class="block lg:text-base"></fa-icon>
+        <span class="lg:hidden">Sign in</span>
+      </li>
+      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Bookmarks">
+        <fa-icon [icon]="fontAwesomeIcons.faBookmark" class="block lg:text-base"></fa-icon>
+        <span class="lg:hidden">bookmarks</span>
+      </li>
+      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Change Theme">
+        <fa-icon [icon]="fontAwesomeIcons.faPaintBrush" class="block lg:text-base"></fa-icon>
+        <span class="lg:hidden">Change Theme</span>
+      </li>
     </ul>
 </div>
