@@ -16,7 +16,7 @@ export class SearchComponent implements AfterViewInit, OnDestroy {
  
   constructor(public searchService: SearchService) {}
   ngAfterViewInit(): void { 
-    if (this.searchInputRef) this.searchInputRef.nativeElement.focus();
+    if (this.searchInputRef) this.searchInputRef.nativeElement.focus()
     this.searchService.searchSubscribe();
   }
 
