@@ -9,7 +9,8 @@ interface ISearchDataSourceLink {
 
 interface ISearchDataSourceAction {
     name: string;
-    action(...args:any[]): void;
+    action(...args: any[]): void;
+    icon?: string
 }
 
 interface ISearchDataSourceCourse {
