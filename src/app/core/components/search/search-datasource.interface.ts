@@ -5,6 +5,7 @@ interface ISearchDataSourceLink {
      * FontAwesome icon name
      */
     icon?: string;
+    breadcrumb?: string;
 }
 
 interface ISearchDataSourceAction {
