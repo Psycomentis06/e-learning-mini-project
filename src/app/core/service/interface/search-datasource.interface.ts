@@ -1,4 +1,4 @@
-interface ISearchDataSourceLink {
+export interface ISearchDataSourceLink {
     name: string;
     path: string;
     /**
@@ -6,17 +6,17 @@ interface ISearchDataSourceLink {
      */
     icon?: string;
     breadcrumb?: string;
+    tags: string[]
 }
 
-interface ISearchDataSourceAction {
-    name: string;
-    action(...args: any[]): void;
-    icon?: string
+export interface ISearchDataSourceAction {
+  name: string;
+  action(...args: any[]): void;
+  icon?: string;
+  tags: string[];
 }
 
-interface ISearchDataSourceCourse {
-
-}
+export interface ISearchDataSourceCourse {}
 
 export interface ISearchDataSource {
     links?: ISearchDataSourceLink[];
