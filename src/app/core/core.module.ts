@@ -5,7 +5,8 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LogoComponent } from './components/logo/logo.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import { SearchComponent } from './components/search/search.component'
+import { SearchComponent } from './components/search/search.component';
+import { FooterComponent } from './components/footer/footer.component'
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SearchComponent } from './components/search/search.component'
     LayoutComponent,
     NavbarComponent,
     LogoComponent,
-    SearchComponent
+    SearchComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
