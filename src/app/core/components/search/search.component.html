@@ -10,40 +10,34 @@
         <!-- Result overlay -->
         <div class="_result-overlay w-full h-screen lg:h-[150%]  lg:py-3 overflow-y-scroll  bg-stone-200 shadow lg:rounded-bl-lg lg:rounded-br-lg">
             <div>
-                <ul class="mb-[100px] lg:mb-2">
+                <ul class="mb-[100px] lg:mb-2" >
+                    <ng-container *ngIf="((searchService.$dataSource() | async)?.actions?.length) || 0 > 0">
                     <li class="mt-4 lg:mt-0 mx-4 font-sans text-lg font-bold text-pink-600">Actions</li>
-                    <li class="relative lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer selection:text-white selection:bg-black">
-                        <span>Item 1</span>
-                        <button class="absolute top-1/2 -translate-y-1/2  right-1  w-6 h-6 bg-pink-200 rounded-full text-pink-500 hover:bg-pink-300 hover:text-pink-600 transition duration-200">
+                    <li *ngFor="let item of (searchService.$dataSource() | async)?.actions" class="relative lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer selection:text-white selection:bg-black">
+                        <span> {{item.name}} </span>
+                        <button title="Remove Item"  class="absolute top-1/2 -translate-y-1/2  right-1  w-6 h-6 bg-pink-200 rounded-full text-pink-500 hover:bg-pink-300 hover:text-pink-600 transition duration-200">
                             <fa-icon [icon]="fontAwesomeIcons.faTimes"></fa-icon>
                         </button>
                     </li>
-                    <li class="relative lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer">
-                        <span>Item 2</span>
-                        <button class="absolute top-1/2 -translate-y-1/2  right-1  w-6 h-6 bg-pink-200 rounded-full text-pink-500 hover:bg-pink-300 hover:text-pink-600 transition duration-200">
-                            <fa-icon [icon]="fontAwesomeIcons.faTimes"></fa-icon>
-                        </button>
-                    </li>
-                    <li class="relative lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer">
-                        <span>Item 3</span>
-                        <button class="absolute top-1/2 -translate-y-1/2  right-1  w-6 h-6 bg-pink-200 rounded-full text-pink-500 hover:bg-pink-300 hover:text-pink-600 transition duration-200">
-                            <fa-icon [icon]="fontAwesomeIcons.faTimes"></fa-icon>
-                        </button>
-                    </li>
-                    <li class="relative lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer">
-                        <span>Item 4</span>
-                        <button class="absolute top-1/2 -translate-y-1/2  right-1  w-6 h-6 bg-pink-200 rounded-full text-pink-500 hover:bg-pink-300 hover:text-pink-600 transition duration-200">
-                            <fa-icon [icon]="fontAwesomeIcons.faTimes"></fa-icon>
-                        </button>
-                    </li>
+                    </ng-container>
+                    <ng-container *ngIf="((searchService.$dataSource() | async)?.links?.length) || 0 > 0">
                     <li class="mx-4 font-sans text-lg font-bold text-pink-600">Links</li>
-                    <li class="lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer">Item 5</li>
-                    <li class="lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer">Item 6</li>
-                    <li class="lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer">Item 7</li>
+                    <li *ngFor="let item of (searchService.$dataSource() | async)?.links" class="relative lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer"> 
+                        <span> {{item.name}} </span>
+                        <button title="Remove Item"  class="absolute top-1/2 -translate-y-1/2  right-1  w-6 h-6 bg-pink-200 rounded-full text-pink-500 hover:bg-pink-300 hover:text-pink-600 transition duration-200">
+                            <fa-icon [icon]="fontAwesomeIcons.faTimes"></fa-icon>
+                        </button>    
+                    </li>
+                    </ng-container>
+                    <ng-container *ngIf="((searchService.$dataSource() | async)?.courses?.length) || 0 > 0">
                     <li class="mx-4 font-sans text-lg font-bold text-pink-600">Lessons</li>
-                    <li class="lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer">Item 8</li>
-                    <li class="lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer">Item 9</li>
-                    <li class="lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer">Item 10</li>
+                    <li *ngFor="let item of (searchService.$dataSource() | async)?.courses" class="relative lg:ml-auto lg:w-[95%] px-4 py-2 text-pink-800 bg-white rounded-lg my-3 mx-2 shadow font-semibold hover:bg-pink-300 transition duration-200 cursor-pointer"> 
+                        <span> {{item}} </span>
+                        <button title="Remove Item"  class="absolute top-1/2 -translate-y-1/2  right-1  w-6 h-6 bg-pink-200 rounded-full text-pink-500 hover:bg-pink-300 hover:text-pink-600 transition duration-200">
+                            <fa-icon [icon]="fontAwesomeIcons.faTimes"></fa-icon>
+                        </button>    
+                    </li>
+                    </ng-container>
                 </ul>
             </div>
         </div>
