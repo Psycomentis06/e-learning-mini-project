@@ -1,5 +1,8 @@
 @use "./scss/themes";
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Nanum+Gothic&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+// Font awesome WebFonts
+$fa-font-path: "../../../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
 
 body {
     font-family:  'Nanum Gothic', 'Cairo','Source Sans Pro', sans-serif;
