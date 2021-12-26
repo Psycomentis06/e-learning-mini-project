@@ -1,16 +1,16 @@
-<header class="h-[70px] bg-white w-full flex flex-row items-center main-navbar lg:bg-black">
+<header class="h-[70px] bg-white w-full flex flex-row items-center main-navbar lg:bg-black fixed top-0 z-20">
   <div class="flex justify-between w-full">
     <h3 class="text-2xl font-semibold text-pink-500 mx-2">E-Learning</h3>
     <button (click)="navbarService.open()" class="bg-pink-100 text-pink-700 px-2 py-1 mr-3 rounded-md outline-hidden outline-offset-1 outline-pink-400 focus:outline  transition duration-150 lg:hidden">
       <fa-icon [icon]="fontAwesomeIcons.faBars" size="lg" class="text-pink-500"></fa-icon>
     </button>
   </div>
-  <div (click)="navbarService.close()"  [ngClass]="(navbarMenu|async) ? 'fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 backdrop-blur-md' : 'bg-opacity-0' " class="transition duration-200 lg:hidden">
+  <div (click)="navbarService.close()"  [ngClass]="(navbarMenu|async) ? 'z-[28] lg:z-auto fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 backdrop-blur-md' : 'bg-opacity-0' " class="transition duration-200 lg:hidden">
     <!-- overlay -->
   </div>
   <div
     [ngClass]="(navbarMenu|async) ? 'left-0' : 'left-[-250px]'"
-    class="min-h-screen absolute bg-pink-900 shadow-lg flex flex-row top-0 items-start nav-link-container transition duration-700 lg:relative lg:flex-col lg:w-full lg:h-full lg:items-center lg:bg-inherit lg:min-h-full"
+    class="z-[29] lg:z-auto  min-h-screen fixed bg-pink-900 shadow-lg flex flex-row top-0 items-start nav-link-container transition duration-700 lg:relative lg:flex-col lg:w-full lg:h-full lg:items-center lg:bg-inherit lg:min-h-full"
   >
     <ul
       class="
