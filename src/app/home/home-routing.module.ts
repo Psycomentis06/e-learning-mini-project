@@ -5,6 +5,10 @@ let routes: Routes = [
     {
         path: '',
         component: HomeComponent
+    },
+    {
+        path: 'pricing',
+        loadChildren: () => import('./pricing-page/pricing-page.module').then(m => m.PricingPageModule)
     }
 ]
 
