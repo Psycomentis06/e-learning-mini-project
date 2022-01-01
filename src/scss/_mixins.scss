@@ -3,32 +3,32 @@
 @use "sass:map";
 
 @mixin sm {
-    @media (max-width: variables.$sm) {
-        @content
+    @media (min-width: variables.$sm) {
+        @content;
     }
 }
 @mixin md {
-    @media (max-width: variables.$md) {
-        @content
+    @media (min-width: variables.$md) {
+        @content;
     }
 }
 @mixin lg {
-    @media (max-width: variables.$lg) {
-        @content
+    @media (min-width: variables.$lg) {
+        @content;
     }
 }
 @mixin xl {
-    @media (max-width: variables.$xl) {
-        @content
+    @media (min-width: variables.$xl) {
+        @content;
     }
 }
 @mixin xl2 {
-    @media (max-width: variables.$xl2) {
-        @content
+    @media (min-width: variables.$xl2) {
+        @content;
     }
 }
 
-@mixin backgroundColor($iconsColor: var(--primary-500), $bgColor:var(--secondary-500)) {
+@mixin backgroundColor($iconsColor: rgb(var(--secondary-700)), $bgColor: rgb(var(--primary-500))) {
         &::after {
       content: "";
       width: 100%;

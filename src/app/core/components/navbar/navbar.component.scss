@@ -3,11 +3,16 @@
 
 .main-navbar {
   .nav-link-container {
-    @include mixins.md {
-      @include mixins.backgroundColor; //pattern
-    }
+    @include mixins.backgroundColor; //pattern
     ul {
       z-index: 1;
+    }
+
+    @include mixins.lg {  
+      &::after {
+        content: '';
+        background: unset;
+      }
     }
   }
 }
