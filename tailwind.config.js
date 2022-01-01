@@ -79,6 +79,12 @@ module.exports = {
             "warning-800": "rgb(var(--warning-800))",
             "warning-900": "rgb(var(--warning-900))",
 
+            // Custom props
+
+            "nav-color": "rgb(var(--navbar-text-color))",
+            "footer-color": "rgb(var(--footer-text-color))",
+            "body-color": "rgb(var(--text-color))",
+
             // Primary text Color
             "inverted-primary-100": "rgb(var(--inverted-primary-100))",
             "inverted-primary-200": "rgb(var(--inverted-primary-200))",
@@ -144,6 +150,10 @@ module.exports = {
             "inverted-warning-700": "rgb(var(--inverted-warning-700))",
             "inverted-warning-800": "rgb(var(--inverted-warning-800))",
             "inverted-warning-900": "rgb(var(--inverted-warning-900))",
+
+            "inverted-nav-color": "rgb(var(--inverted-navbar-text-color))",
+            "inverted-footer-color": "rgb(var(--inverted-footer-text-color))",
+            "inverted-body-color": "rgb(var(--inverted-text-color))",
           },
         },
       },
@@ -215,73 +225,104 @@ module.exports = {
             "warning-700": skinColorOpacity("--warning-700"),
             "warning-800": skinColorOpacity("--warning-800"),
             "warning-900": skinColorOpacity("--warning-900"),
-          },
-          inverted: {
+
+            // Custom props
+
+            "nav-color": skinColorOpacity("--navbar-bg-color"),
+            "footer-color": skinColorOpacity("--footer-bg-color"),
+            "body-color": skinColorOpacity("--bg-color"),
+
             // Primary text Color
-            "primary-100": skinColorOpacity("--inverted-primary-100"),
-            "primary-200": skinColorOpacity("--inverted-primary-200"),
-            "primary-300": skinColorOpacity("--inverted-primary-300"),
-            "primary-400": skinColorOpacity("--inverted-primary-400"),
-            "primary-500": skinColorOpacity("--inverted-primary-500"),
-            "primary-600": skinColorOpacity("--inverted-primary-600"),
-            "primary-700": skinColorOpacity("--inverted-primary-700"),
-            "primary-800": skinColorOpacity("--inverted-primary-800"),
-            "primary-900": skinColorOpacity("--inverted-primary-900"),
+            "inverted-primary-100": skinColorOpacity("--inverted-primary-100"),
+            "inverted-primary-200": skinColorOpacity("--inverted-primary-200"),
+            "inverted-primary-300": skinColorOpacity("--inverted-primary-300"),
+            "inverted-primary-400": skinColorOpacity("--inverted-primary-400"),
+            "inverted-primary-500": skinColorOpacity("--inverted-primary-500"),
+            "inverted-primary-600": skinColorOpacity("--inverted-primary-600"),
+            "inverted-primary-700": skinColorOpacity("--inverted-primary-700"),
+            "inverted-primary-800": skinColorOpacity("--inverted-primary-800"),
+            "inverted-primary-900": skinColorOpacity("--inverted-primary-900"),
 
             // Secondary text Color
-            "secondary-100": skinColorOpacity("--inverted-secondary-100"),
-            "secondary-200": skinColorOpacity("--inverted-secondary-200"),
-            "secondary-300": skinColorOpacity("--inverted-secondary-300"),
-            "secondary-400": skinColorOpacity("--inverted-secondary-400"),
-            "secondary-500": skinColorOpacity("--inverted-secondary-500"),
-            "secondary-600": skinColorOpacity("--inverted-secondary-600"),
-            "secondary-700": skinColorOpacity("--inverted-secondary-700"),
-            "secondary-800": skinColorOpacity("--inverted-secondary-800"),
-            "secondary-900": skinColorOpacity("--inverted-secondary-900"),
+            "inverted-secondary-100": skinColorOpacity(
+              "--inverted-secondary-100"
+            ),
+            "inverted-secondary-200": skinColorOpacity(
+              "--inverted-secondary-200"
+            ),
+            "inverted-secondary-300": skinColorOpacity(
+              "--inverted-secondary-300"
+            ),
+            "inverted-secondary-400": skinColorOpacity(
+              "--inverted-secondary-400"
+            ),
+            "inverted-secondary-500": skinColorOpacity(
+              "--inverted-secondary-500"
+            ),
+            "inverted-secondary-600": skinColorOpacity(
+              "--inverted-secondary-600"
+            ),
+            "inverted-secondary-700": skinColorOpacity(
+              "--inverted-secondary-700"
+            ),
+            "inverted-secondary-800": skinColorOpacity(
+              "--inverted-secondary-800"
+            ),
+            "inverted-secondary-900": skinColorOpacity(
+              "--inverted-secondary-900"
+            ),
 
             //  Success text Color
-            "success-100": skinColorOpacity("--inverted-success-100"),
-            "success-200": skinColorOpacity("--inverted-success-200"),
-            "success-300": skinColorOpacity("--inverted-success-300"),
-            "success-400": skinColorOpacity("--inverted-success-400"),
-            "success-500": skinColorOpacity("--inverted-success-500"),
-            "success-600": skinColorOpacity("--inverted-success-600"),
-            "success-700": skinColorOpacity("--inverted-success-700"),
-            "success-800": skinColorOpacity("--inverted-success-800"),
-            "success-900": skinColorOpacity("--inverted-success-900"),
+            "inverted-success-100": skinColorOpacity("--inverted-success-100"),
+            "inverted-success-200": skinColorOpacity("--inverted-success-200"),
+            "inverted-success-300": skinColorOpacity("--inverted-success-300"),
+            "inverted-success-400": skinColorOpacity("--inverted-success-400"),
+            "inverted-success-500": skinColorOpacity("--inverted-success-500"),
+            "inverted-success-600": skinColorOpacity("--inverted-success-600"),
+            "inverted-success-700": skinColorOpacity("--inverted-success-700"),
+            "inverted-success-800": skinColorOpacity("--inverted-success-800"),
+            "inverted-success-900": skinColorOpacity("--inverted-success-900"),
 
             // Danger text Color
-            "danger-100": skinColorOpacity("--inverted-danger-100"),
-            "danger-200": skinColorOpacity("--inverted-danger-200"),
-            "danger-300": skinColorOpacity("--inverted-danger-300"),
-            "danger-400": skinColorOpacity("--inverted-danger-400"),
-            "danger-500": skinColorOpacity("--inverted-danger-500"),
-            "danger-600": skinColorOpacity("--inverted-danger-600"),
-            "danger-700": skinColorOpacity("--inverted-danger-700"),
-            "danger-800": skinColorOpacity("--inverted-danger-800"),
-            "danger-900": skinColorOpacity("--inverted-danger-900"),
+            "inverted-danger-100": skinColorOpacity("--inverted-danger-100"),
+            "inverted-danger-200": skinColorOpacity("--inverted-danger-200"),
+            "inverted-danger-300": skinColorOpacity("--inverted-danger-300"),
+            "inverted-danger-400": skinColorOpacity("--inverted-danger-400"),
+            "inverted-danger-500": skinColorOpacity("--inverted-danger-500"),
+            "inverted-danger-600": skinColorOpacity("--inverted-danger-600"),
+            "inverted-danger-700": skinColorOpacity("--inverted-danger-700"),
+            "inverted-danger-800": skinColorOpacity("--inverted-danger-800"),
+            "inverted-danger-900": skinColorOpacity("--inverted-danger-900"),
 
             // Info text Color
-            "info-100": skinColorOpacity("--inverted-info-100"),
-            "info-200": skinColorOpacity("--inverted-info-200"),
-            "info-300": skinColorOpacity("--inverted-info-300"),
-            "info-400": skinColorOpacity("--inverted-info-400"),
-            "info-500": skinColorOpacity("--inverted-info-500"),
-            "info-600": skinColorOpacity("--inverted-info-600"),
-            "info-700": skinColorOpacity("--inverted-info-700"),
-            "info-800": skinColorOpacity("--inverted-info-800"),
-            "info-900": skinColorOpacity("--inverted-info-900"),
+            "inverted-info-100": skinColorOpacity("--inverted-info-100"),
+            "inverted-info-200": skinColorOpacity("--inverted-info-200"),
+            "inverted-info-300": skinColorOpacity("--inverted-info-300"),
+            "inverted-info-400": skinColorOpacity("--inverted-info-400"),
+            "inverted-info-500": skinColorOpacity("--inverted-info-500"),
+            "inverted-info-600": skinColorOpacity("--inverted-info-600"),
+            "inverted-info-700": skinColorOpacity("--inverted-info-700"),
+            "inverted-info-800": skinColorOpacity("--inverted-info-800"),
+            "inverted-info-900": skinColorOpacity("--inverted-info-900"),
 
             // Warning text Color
-            "warning-100": skinColorOpacity("--inverted-warning-100"),
-            "warning-200": skinColorOpacity("--inverted-warning-200"),
-            "warning-300": skinColorOpacity("--inverted-warning-300"),
-            "warning-400": skinColorOpacity("--inverted-warning-400"),
-            "warning-500": skinColorOpacity("--inverted-warning-500"),
-            "warning-600": skinColorOpacity("--inverted-warning-600"),
-            "warning-700": skinColorOpacity("--inverted-warning-700"),
-            "warning-800": skinColorOpacity("--inverted-warning-800"),
-            "warning-900": skinColorOpacity("--inverted-warning-900"),
+            "inverted-warning-100": skinColorOpacity("--inverted-warning-100"),
+            "inverted-warning-200": skinColorOpacity("--inverted-warning-200"),
+            "inverted-warning-300": skinColorOpacity("--inverted-warning-300"),
+            "inverted-warning-400": skinColorOpacity("--inverted-warning-400"),
+            "inverted-warning-500": skinColorOpacity("--inverted-warning-500"),
+            "inverted-warning-600": skinColorOpacity("--inverted-warning-600"),
+            "inverted-warning-700": skinColorOpacity("--inverted-warning-700"),
+            "inverted-warning-800": skinColorOpacity("--inverted-warning-800"),
+            "inverted-warning-900": skinColorOpacity("--inverted-warning-900"),
+
+            "inverted-nav-color": skinColorOpacity(
+              "--inverted-navbar-bg-color"
+            ),
+            "inverted-footer-color": skinColorOpacity(
+              "--inverted-footer-bg-color"
+            ),
+            "inverted-body-color": skinColorOpacity("--inverted-bg-color"),
           },
         },
       },

@@ -72,6 +72,19 @@ $default-theme: (
     "info-900": "1,55,111",
     "warning-900": "117, 109, 4",   
 
+    /* Custom props */
+    // Navbar && Header
+    "navbar-bg-color": "",
+    "navbar-text-color": "",
+
+    // Footer
+    "footer-bg-color": "",
+    "footer-text-color": "",
+
+    // Generale
+    "bg-color": "",
+    "text-color": "",
+
     // Inverted 
     "inverted-primary-100": "254,218,222",
     "inverted-secondary-100":  "245,245,245",
@@ -134,5 +147,17 @@ $default-theme: (
     "inverted-danger-900": "122, 21, 87",
     "inverted-success-900": "14,95,57",
     "inverted-info-900": "1,55,111",
-    "inverted-warning-900": "117, 109, 4",   
+    "inverted-warning-900": "117, 109, 4",
+    
+    
+    "inverted-navbar-bg-color": "",
+    "inverted-navbar-text-color": "",
+
+    
+    "inverted-footer-bg-color": "",
+    "inverted-footer-text-color": "",
+
+    
+    "inverted-bg-color": "",
+    "inverted-text-color": "", 
 )
