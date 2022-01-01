@@ -16,13 +16,8 @@ body {
 @layer base {
     :root {
         // default Tailwind skin | theme
-        --color-accent-text: #{themes.$color-accent-text};
-        --color-accent-bg: #{themes.$color-accent-bg};
-        --color-accent-hover: #{themes.$color-accent-hover};
-        --color-accent-inverted: #{themes.$color-accent-inverted};
-        --color-success: #{themes.$color-success};
-        --color-success-inverted: #{themes.$color-success-inverted};
-        --color-success-text: #{themes.$color-success-text};
-        --color-success-bg: #{themes.$color-success-bg};
+        @each $name, $item in themes.$default-theme {
+            --#{$name}: #{$item} 
+        }
     }
 }

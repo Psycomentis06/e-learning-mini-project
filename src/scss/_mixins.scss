@@ -1,5 +1,6 @@
 @use "./themes";
 @use "./variables";
+@use "sass:map";
 
 @mixin sm {
     @media (max-width: variables.$sm) {
@@ -27,7 +28,7 @@
     }
 }
 
-@mixin backgroundColor($iconsColor:themes.$color-accent-text, $bgColor:themes.$color-accent-bg) {
+@mixin backgroundColor($iconsColor: var(--primary-500), $bgColor:var(--secondary-500)) {
         &::after {
       content: "";
       width: 100%;
@@ -36,27 +37,27 @@
       top: 0;
       left: 0;
 
-      background-color: #{themes.$color-accent-text};
+      background-color: $iconsColor;
       opacity: 0.1;
       background: radial-gradient(
           circle,
           transparent 20%,
-          #{themes.$color-accent-text} 20%,
-          #{themes.$color-accent-text} 80%,
+          $iconsColor 20%,
+          $iconsColor 80%,
           transparent 80%,
           transparent
         ),
         radial-gradient(
             circle,
             transparent 20%,
-            #{themes.$color-accent-text} 20%,
-            #{themes.$color-accent-text} 80%,
+            $iconsColor 20%,
+            $iconsColor 80%,
             transparent 80%,
             transparent
           )
           100px 100px,
-        linear-gradient(#{themes.$color-accent-bg} 8px, transparent 8px) 0 -4px,
-        linear-gradient(90deg, #{themes.$color-accent-bg} 8px, #{themes.$color-accent-text} 8px) -4px 0;
+        linear-gradient($bgColor 8px, transparent 8px) 0 -4px,
+        linear-gradient(90deg, $bgColor 8px, $iconsColor 8px) -4px 0;
       background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
     }
 }
