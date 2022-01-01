@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+#Ignore JsonServer data
+/src/assets/logo
+db.json
