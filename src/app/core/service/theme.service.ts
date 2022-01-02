@@ -31,6 +31,8 @@ export class ThemeService {
       theme: {
         className: 'base',
         name: 'base',
+        accentColor: '#ec4899',
+        secondaryColor: "#000"
       },
     };
   }
