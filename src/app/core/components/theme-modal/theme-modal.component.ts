@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { faSun, faMoon, faDesktop, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { Subscription } from 'rxjs';
 import { ThemeModalService } from '../../service/theme-modal.service';
-import { ITheme, IThemeConfig } from '../../service/theme.interface';
+import { ITheme, IThemeConfig } from '../../service/interface/theme.interface';
 import { ThemeService } from '../../service/theme.service';
 @Component({
   selector: 'app-theme-modal',

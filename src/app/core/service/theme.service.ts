@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, take, tap } from 'rxjs';
-import { IThemeConfig } from './theme.interface';
+import { IThemeConfig } from './interface/theme.interface';
 import { environment } from '../../../environments/environment';
 
 @Injectable({
