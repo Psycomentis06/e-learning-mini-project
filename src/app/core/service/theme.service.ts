@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { ITheme, IThemeConfig } from './theme.interface';
+import { BehaviorSubject, Observable, take, tap } from 'rxjs';
+import { IThemeConfig } from './theme.interface';
 import { environment } from '../../../environments/environment';
 
 @Injectable({
@@ -17,6 +17,10 @@ export class ThemeService {
   }
 
   getDefaultTheme(): IThemeConfig {
+    let localTheme: IThemeConfig | null = this.getFromLocal()
+    if (localTheme) {
+      return localTheme;
+    }
     for (let index = 0; index < environment.theme.presets.length; index++) {
       if (environment.theme.presets[index].id === environment.theme.default)
         return <IThemeConfig>environment.theme.presets[index];
@@ -49,8 +53,6 @@ export class ThemeService {
   }
 
   setTheme(theme: IThemeConfig) {
-    this.updateUI(theme, this.getCurrentTheme())
-    this.saveLocal(theme);
     this.$themeSubject.next(theme);
   }
 
@@ -62,7 +64,7 @@ export class ThemeService {
     return <IThemeConfig[]>environment.theme.presets;
   }
 
-  updateUI(theme: IThemeConfig, oldTheme: IThemeConfig): void {
+  updateUI(theme: IThemeConfig): void {
     const setDark = () => document.documentElement.classList.add('dark');
     const setLight = () => document.documentElement.classList.remove('dark');
     const setSystem = () => {
@@ -89,7 +91,20 @@ export class ThemeService {
         break;
     }
 
-    document.documentElement.classList.add(theme.theme.className)
-    document.documentElement.classList.remove(oldTheme.theme.className)
+    document.body.classList.forEach(i => {
+      if (i.startsWith("t-")) document.body.classList.remove(i);
+    })
+    document.body.classList.add("t-" + theme.theme.className)
   }
+
+  
+  public get $theme() : Observable<IThemeConfig> {
+    return this._themeObservable.pipe(
+      tap(t => {
+        this.updateUI(t);
+        this.saveLocal(t);
+      })
+    )
+  }
+  
 }

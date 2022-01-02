@@ -82,8 +82,10 @@
         <span class="lg:hidden">bookmarks</span>
       </li>
       <li class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Change Theme">
-        <fa-icon [icon]="fontAwesomeIcons.faPaintBrush" class="block lg:text-base"></fa-icon>
-        <span class="lg:hidden">Change Theme</span>
+       <button (click)="themeModalService.open()">
+          <fa-icon [icon]="fontAwesomeIcons.faPaintBrush" class="block lg:text-base"></fa-icon>
+          <span class="lg:hidden">Change Theme</span>
+       </button>
       </li>
     </ul>
 </header>

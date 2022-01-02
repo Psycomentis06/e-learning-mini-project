@@ -3,6 +3,7 @@ import {faBars, faAngleLeft, faSearch, faBookmark, faUser, faPaintBrush} from '@
 import { Observable } from 'rxjs';
 import { NavbarService } from '../../service/navbar.service';
 import { SearchService } from '../../service/search.service';
+import { ThemeModalService } from '../../service/theme-modal.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -19,7 +20,7 @@ export class NavbarComponent implements OnInit {
   }
   
   navbarMenu: Observable<boolean>;
-  constructor(public navbarService: NavbarService, public searchService: SearchService) {
+  constructor(public navbarService: NavbarService, public searchService: SearchService, public themeModalService: ThemeModalService) {
     this.navbarMenu = new Observable();
   }
   ngOnInit(): void {

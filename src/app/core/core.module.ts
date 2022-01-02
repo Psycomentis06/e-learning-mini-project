@@ -6,7 +6,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LogoComponent } from './components/logo/logo.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { SearchComponent } from './components/search/search.component';
-import { FooterComponent } from './components/footer/footer.component'
+import { FooterComponent } from './components/footer/footer.component';
+import { ThemeModalComponent } from './components/theme-modal/theme-modal.component'
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FooterComponent } from './components/footer/footer.component'
     NavbarComponent,
     LogoComponent,
     SearchComponent,
-    FooterComponent
+    FooterComponent,
+    ThemeModalComponent
   ],
   imports: [
     CommonModule,
