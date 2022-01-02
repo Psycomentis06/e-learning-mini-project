@@ -8,6 +8,7 @@ function skinColorOpacity(varName) {
 
 module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{html,js,ts}"],
+  darkMode: 'class',
   theme: {
     extend: {
       backgroundColor: {
