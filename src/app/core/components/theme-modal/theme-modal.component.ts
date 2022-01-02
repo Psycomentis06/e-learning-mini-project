@@ -38,11 +38,7 @@ export class ThemeModalComponent implements OnInit, OnDestroy {
     this.changeTheme()
   }
 
-  setThemeSkin(name: string, className: string) {
-    let theme: ITheme = {
-      className,
-      name
-    }
+  setThemeSkin(theme: ITheme) {
     this.currentTheme.theme = theme
     this.changeTheme()
   }
