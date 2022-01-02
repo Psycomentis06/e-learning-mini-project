@@ -3,7 +3,29 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  theme: {
+    presets: [
+      {
+        id: 1000,
+        default: "SYSTEM",
+        theme: {
+          name: "Pink/Dark",
+          className: "pink-dark"
+        }
+      },
+      {
+        id: 1001,
+        default: "SYSTEM",
+        theme: {
+          name: "Purple/Pink",
+          className: "purple-pink"
+        }
+      }
+    ],
+    default: 1000,
+    storage_key_name: "_active-theme"
+  }
 };
 
 /*
