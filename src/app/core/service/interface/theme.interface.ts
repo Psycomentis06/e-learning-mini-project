@@ -1,6 +1,8 @@
 export interface ITheme {
     name: string;
-    className: string;
+  className: string;
+  accentColor: string;
+  secondaryColor: string
 }
 
 export interface IThemeConfig {
