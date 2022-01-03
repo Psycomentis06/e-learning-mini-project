@@ -1,15 +1,100 @@
 <!-- Welcome section -->
+<section class="w-full h-screen overflow-hidden">
+  <div class="relative w-full h-full">
+<svg
+   version="1.1"
+   id="svg3540"
+   width="1069.653"
+   height="954.62756"
+   class=" -z-10 absolute overflow-hidden -top-52 right-28 lg:-right-40"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3544" />
+  <g
+     id="g3546"
+     transform="translate(-753.22675,41.151888)">
+    <path
+        class="fill-skin-base-nav-bg dark:bg-skin-base-inverted-body-bg"
+       style="fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1696.7093,3.6326113 c -185.4331,21.5347927 10.956,-125.8194613 -185.4331,21.5347927 -196.3891,147.354256 -85.5794,28.766818 -200.7244,156.399576 -86.1992,95.54759 -6.1047,192.34143 -75.5258,208.9698 -69.4211,16.62838 -96.8713,3.06296 -144.2098,74.58046 -47.3384,71.51749 -369.28931,86.21686 -334.25263,243.35371 35.03669,157.13685 -79.34054,50.01744 106.51674,105.73541 190.85249,57.21548 866.73659,82.34453 856.16009,96.25124 -37.0471,48.71214 139.8186,-506.10514 96.8673,-663.35615 C 1773.1564,89.850436 1696.7093,3.6326113 1696.7093,3.6326113 Z"
+       id="path2977" />
+  </g>
+</svg>
 
+      <div class="w-full h-full flex items-center justify-center">
+      <div class="mix-blend-difference text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500 text-center">
+          <p class="text-3xl font-source-sans-pro px-1 lg:px-0 lg:text-4xl">
+              E-Learning programming learning platform.
+          </p>
+          <button class="font-semibold my-3 px-3 py-2 border-2 border-skin-base-primary-500 hover:bg-skin-base-primary-500 hover:text-skin-base-nav-color dark:bg-skin-base-inverted-primary-500 dark:hover:bg-skin-base-primary-500 dark:hover:text-skin-base-nav-color transition duration-200 ease-out"> Start for free </button>
+      </div>
+  </div>
+  </div>
+</section>
 <!-- Languages section -->
-<section class="py-8 ">
-    <div class="relative my-6">
-        <fa-icon class="absolute top-[5px] left-[4px] text-skin-base-primary-500" [icon]="fontAwesomeIcons.faMinus" size="lg"></fa-icon>
-        <h1 class="font-medium text-2xl ml-5 text-skin-base-primary-500">Popular Language's courses</h1>
-    </div>
-    <div class="flex flex-col lg:flex-row justify-around flex-wrap">
-        <app-course-card bg-color="rgb(155, 15, 255)" class="lg:w-[300px]"></app-course-card>
-        <app-course-card class="lg:w-[300px]"></app-course-card>
-        <app-course-card class="lg:w-[300px]"></app-course-card>
-        <app-course-card class="lg:w-[300px]"></app-course-card>
-    </div>
+<section class="py-8">
+  <div class="relative my-6">
+    <fa-icon
+      class="absolute top-[5px] left-[4px] text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500"
+      [icon]="fontAwesomeIcons.faMinus"
+      size="lg"
+    ></fa-icon>
+    <h1 class="font-medium text-2xl ml-5 text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500">
+      Popular Language's courses
+    </h1>
+  </div>
+  <div class="flex flex-col lg:flex-row justify-around flex-wrap">
+    <app-course-card
+      bg-color="rgb(155, 15, 255)"
+      class="lg:w-[300px]"
+    ></app-course-card>
+    <app-course-card class="lg:w-[300px]"></app-course-card>
+    <app-course-card class="lg:w-[300px]"></app-course-card>
+    <app-course-card class="lg:w-[300px]"></app-course-card>
+  </div>
+</section>
+<!-- Courses Section -->
+<section class="py-8">
+  <div class="relative my-6">
+    <fa-icon
+      class="absolute top-[5px] left-[4px] text-skin-base-secondary-800 dark:text-skin-base-inverted-secondary-800"
+      [icon]="fontAwesomeIcons.faMinus"
+      size="lg"
+    ></fa-icon>
+    <h1 class="font-medium text-2xl ml-5 text-skin-base-secondary-800 dark:text-skin-base-inverted-secondary-800">
+      Trending courses
+    </h1>
+  </div>
+  <div class="flex flex-col lg:flex-row justify-around flex-wrap">
+    <app-course-card
+      bg-color="rgb(155, 15, 255)"
+      class="lg:w-[300px]"
+    ></app-course-card>
+    <app-course-card class="lg:w-[300px]"></app-course-card>
+    <app-course-card class="lg:w-[300px]"></app-course-card>
+    <app-course-card class="lg:w-[300px]"></app-course-card>
+  </div>
+</section>
+<!-- Users feedback -->
+<section class="py-8">
+  <div class="relative my-6">
+    <fa-icon
+      class="absolute top-[5px] left-[4px] text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500"
+      [icon]="fontAwesomeIcons.faMinus"
+      size="lg"
+    ></fa-icon>
+    <h1 class="font-medium text-2xl ml-5 text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500">
+      People feedbacks
+    </h1>
+  </div>
+  <div class="flex flex-col lg:flex-row justify-around flex-wrap">
+    <app-course-card
+      bg-color="rgb(155, 15, 255)"
+      class="lg:w-[300px]"
+    ></app-course-card>
+    <app-course-card class="lg:w-[300px]"></app-course-card>
+    <app-course-card class="lg:w-[300px]"></app-course-card>
+    <app-course-card class="lg:w-[300px]"></app-course-card>
+  </div>
 </section>
