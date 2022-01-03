@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { CourseCardComponent } from './components/course-card/course-card.component';
-
+import { FontAwesomeModule  } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -13,7 +13,8 @@ import { CourseCardComponent } from './components/course-card/course-card.compon
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FontAwesomeModule
   ]
 })
 export class HomeModule { }
