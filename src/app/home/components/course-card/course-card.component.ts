@@ -21,8 +21,8 @@ export class CourseCardComponent implements OnInit {
     this.bgColor = "rgb(0,0,0)";
     this.textColor = "rgb(255,255,255)",
 
-    this.radialXTransition = "25%";
-    this.radialYTransition = "25%";
+    this.radialXTransition = "0";
+    this.radialYTransition = "10%";
    }
 
   ngOnInit(): void {
