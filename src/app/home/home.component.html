@@ -1,10 +1,15 @@
 <!-- Welcome section -->
 
-<section class="w-full h-screen flex flex-row justify-around">
-    <app-course-card class="w-[300px]"></app-course-card>
-    <app-course-card class="w-[300px]"></app-course-card>
-    <app-course-card class="w-[300px]"></app-course-card>
-    <app-course-card class="w-[300px]"></app-course-card>
-    <app-course-card class="w-[300px]"></app-course-card>
-    <app-course-card class="w-[300px]"></app-course-card>
+<!-- Languages section -->
+<section class="py-8 ">
+    <div class="relative my-6">
+        <fa-icon class="absolute top-[5px] left-[4px] text-skin-base-primary-500" [icon]="fontAwesomeIcons.faMinus" size="lg"></fa-icon>
+        <h1 class="font-medium text-2xl ml-5 text-skin-base-primary-500">Popular Language's courses</h1>
+    </div>
+    <div class="flex flex-col lg:flex-row justify-around flex-wrap">
+        <app-course-card bg-color="rgb(155, 15, 255)" class="lg:w-[300px]"></app-course-card>
+        <app-course-card class="lg:w-[300px]"></app-course-card>
+        <app-course-card class="lg:w-[300px]"></app-course-card>
+        <app-course-card class="lg:w-[300px]"></app-course-card>
+    </div>
 </section>
