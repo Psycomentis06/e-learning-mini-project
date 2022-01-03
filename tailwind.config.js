@@ -8,7 +8,7 @@ function skinColorOpacity(varName) {
 
 module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{html,js,ts}"],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       backgroundColor: {
@@ -260,6 +260,10 @@ module.exports = {
             "footer-color": "rgb(var(--footer-text-color))",
             "body-color": "rgb(var(--text-color))",
 
+            "nav-bg": "rgb(var(--navbar-bg-color))",
+            "footer-bg": "rgb(var(--footer-bg-color))",
+            "body-bg": "rgb(var(--bg-color))",
+
             // Primary text Color
             "inverted-primary-100": "rgb(var(--inverted-primary-100))",
             "inverted-primary-200": "rgb(var(--inverted-primary-200))",
@@ -329,6 +333,10 @@ module.exports = {
             "inverted-nav-color": "rgb(var(--inverted-navbar-text-color))",
             "inverted-footer-color": "rgb(var(--inverted-footer-text-color))",
             "inverted-body-color": "rgb(var(--inverted-text-color))",
+
+            "inverted-nav-bg": "rgb(var(--inverted-navbar-bg-color))",
+            "inverted-footer-bg": "rgb(var(--inverted-footer-bg-color))",
+            "inverted-body-bg": "rgb(var(--inverted-bg-color))",
           },
         },
       },
