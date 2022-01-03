@@ -3,5 +3,5 @@
     <router-outlet></router-outlet>
 </section>
 <app-footer></app-footer>
-<app-search *ngIf="(searchService.visible | async)"></app-search>
-<app-theme-modal *ngIf="(themeModalService.$visible | async)"></app-theme-modal>
+<app-search @fadeInOut *ngIf="(searchService.visible | async)"></app-search>
+<app-theme-modal @fadeInOut *ngIf="(themeModalService.$visible | async)"></app-theme-modal>

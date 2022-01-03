@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { fadeInOut } from '../animation/fade-in-out.animation';
 import { SearchService } from '../service/search.service';
 import { ThemeModalService } from '../service/theme-modal.service';
 import { ThemeService } from '../service/theme.service';
@@ -7,7 +8,10 @@ import { ThemeService } from '../service/theme.service';
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+  styleUrls: ['./layout.component.scss'],
+  animations: [
+    fadeInOut(100)
+  ]
 })
 export class LayoutComponent implements OnInit, OnDestroy {
 
