@@ -3,4 +3,10 @@ export interface IFramework {
   name: string;
   logo: string;
   description: string;
+  metaData: {
+    theme: {
+      bg: string;
+      text: string;
+    };
+  };
 }
