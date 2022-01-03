@@ -74,16 +74,16 @@ $default-theme: (
 
     /* Custom props */
     // Navbar && Header
-    "navbar-bg-color": "",
-    "navbar-text-color": "",
+    "navbar-bg-color": "0,0,0",
+    "navbar-text-color": "255,255,255",
 
     // Footer
-    "footer-bg-color": "",
-    "footer-text-color": "",
+    "footer-bg-color": "0,0,0",
+    "footer-text-color": "255,255,255",
 
     // Generale
-    "bg-color": "",
-    "text-color": "",
+    "bg-color": "255,255,255",
+    "text-color": "38,38,38",
 
     // Inverted 
     "inverted-primary-100": "254,218,222",
@@ -150,14 +150,14 @@ $default-theme: (
     "inverted-warning-900": "117, 109, 4",
     
     
-    "inverted-navbar-bg-color": "",
-    "inverted-navbar-text-color": "",
+    "inverted-navbar-bg-color": "0,0,0",
+    "inverted-navbar-text-color": "255,255,255",
 
     
-    "inverted-footer-bg-color": "",
-    "inverted-footer-text-color": "",
+    "inverted-footer-bg-color": "0,0,0",
+    "inverted-footer-text-color": "255,255,255",
 
     
-    "inverted-bg-color": "",
-    "inverted-text-color": "", 
+    "inverted-bg-color": "0,0,0",
+    "inverted-text-color": "255,255,255", 
 )
