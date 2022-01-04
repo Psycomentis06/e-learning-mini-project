@@ -1,1 +1,9 @@
-<p>lesson-overview works!</p>
+<section class="h-screen overflow-y-scroll">
+    <div *ngIf="($courseObservable | async) as currentCourse">
+            <img  class="w-[400px] h-[300px] object-cover mx-auto" [src]="currentCourse.cover" [alt]=" 'Course' + currentCourse.name + '\'s Cover page' ">
+            <p class="text-justify px-3 py-2"> {{currentCourse.description}} </p>
+    </div>
+    <ng-template #noDataTmp>
+        <h1> No Data. if you are seeing this msg directly when entered this page maybe you data is loading </h1>
+    </ng-template>
+</section>
