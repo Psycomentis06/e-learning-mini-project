@@ -1,0 +1,19 @@
+<section class="mt-4  overflow-y-scroll" style="height: calc(100vh - 100px);">
+    <div class="mx-4"  *ngIf="($lessonObservable | async) as currentLesson; else noDataTmp">
+        <h1 class="text-center text-3xl font-semibold"> {{currentLesson.title}} </h1>
+        <div class="mt-4 w-1/2 mx-auto text-justify text-skin-base-secondary-600 dark:text-skin-base-inverted-secondary-600">
+<span> Difficulty Level: {{currentLesson.difficulty}} </span>
+        <br>
+        <span> Read time: {{currentLesson.periodToComplete}} </span>
+        </div>
+        
+        <div class=" mt-4 w-1/2 mx-auto text-justify text-skin-base-secondary-600 dark:text-skin-base-inverted-secondary-600">
+           <p class="my-3" [innerHTML]="d | descriptionFormatter"  *ngFor="let d of currentLesson.description"> 
+                   
+            </p>
+        </div>
+    </div>
+    <ng-template #noDataTmp>
+        <h1> No Data. if you are seeing this msg directly when entered this page maybe you data is loading </h1>
+    </ng-template>
+</section>
