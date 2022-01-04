@@ -3,10 +3,10 @@
     <!-- Sidebar -->
        <ul>
            <li *ngFor="let c of currentCourse.chapters; index as i">
-               <a class="hover:underline" routerLinkActive="decoration-skin-base-primary-500 dark:decoration-skin-base-inverted-primary-500"  [routerLink]="[c.id]"> {{(i+1) + '. ' + c.title}} </a>
+               <a class="hover:underline decoration-2 transition duration-300" routerLinkActive="underline text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500"  [routerLink]="[c.id]"> {{(i+1) + '. ' + c.title}} </a>
                <ul class="ml-3 my-2">
                    <li *ngFor="let l of c.lessons; index as j;">
-                       <a class="hover:underline" [routerLink]="[c.id ,l.id]"> {{(i+1) + '.' + (j+1) + '. ' + l.title}} </a>
+                       <a class="hover:underline decoration-2 transition duration-300" routerLinkActive="underline text-skin-base-primary-700 dark:text-skin-base-inverted-primary-700" [routerLink]="[c.id ,l.id]"> {{(i+1) + '.' + (j+1) + '. ' + l.title}} </a>
                    </li>
                </ul>
            </li>
