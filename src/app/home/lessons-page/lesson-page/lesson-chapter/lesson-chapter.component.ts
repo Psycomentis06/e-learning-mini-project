@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, switchMap } from 'rxjs';
+import { IModule } from 'src/app/interfaces/module.interface';
+import { ModuleService } from 'src/app/services/module.service';
 
 @Component({
   selector: 'app-lesson-chapter',
@@ -6,10 +10,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lesson-chapter.component.scss']
 })
 export class LessonChapterComponent implements OnInit {
-
-  constructor() { }
+  $moduleObservable: Observable<IModule>
+  constructor(private moduleService: ModuleService, private activatedRoute: ActivatedRoute) {
+    this.$moduleObservable = this.getChapter();
+  }
 
   ngOnInit(): void {
+    
+  }
+
+  getChapter():Observable<IModule> {
+    return this.activatedRoute.params.pipe(
+      switchMap(p => this.moduleService.get(p["chapterId"] || ""))
+    )
   }
 
 }

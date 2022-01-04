@@ -1,1 +1,19 @@
-<p>lesson-chapter works!</p>
+<section class="mt-4">
+    <div class="mx-4"  *ngIf="($moduleObservable | async) as currentChapter; else noDataTmp">
+        <h1 class="text-center text-3xl font-semibold"> {{currentChapter.title}} </h1>
+        <p class=" mt-4 w-1/2 mx-auto text-justify text-skin-base-secondary-600 dark:text-skin-base-inverted-secondary-600">
+           <span class="font-bold text-skin-base-secondary-900 dark:text-skin-base-inverted-secondary-900">Description:</span> {{currentChapter.description}}
+        </p>
+        <div class="w-1/2 mx-auto mt-4">
+            <h4 class="text-xl font-bold"> Chapter Lessons: </h4>
+            <ol class="list-decimal ml-5">
+                <li *ngFor="let l of currentChapter.lessons">
+                    <a [routerLink]="[l.id]" class="underline">{{l.title}}</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <ng-template #noDataTmp>
+        <h1> No Data. if you are seeing this msg directly when entered this page maybe you data is loading </h1>
+    </ng-template>
+</section>
