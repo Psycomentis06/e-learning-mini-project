@@ -14,6 +14,17 @@ export class ThemeService {
       this.getDefaultTheme()
     );
     this._themeObservable = this.$themeSubject.asObservable();
+
+    // Add default body classes
+    document.body.classList.add(
+      'bg-skin-base-body-bg',
+      'text-skin-base-body-color',
+      'dark:bg-skin-base-inverted-body-bg',
+      'dark:text-skin-base-inverted-body-color',
+      'transition',
+      'duration-300',
+      'ease-in'
+    );
   }
 
   getDefaultTheme(): IThemeConfig {
