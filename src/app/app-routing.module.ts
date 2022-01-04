@@ -5,16 +5,19 @@ import { NotfoundComponent } from './pages/errors/notfound/notfound.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./home/home.module').then( m => m.HomeModule)
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'notfound',
-    component: NotfoundComponent
+    component: NotfoundComponent,
+    data: {
+      noHeaderFooter: true
+    }
   },
   {
     path: '**',
-    redirectTo: 'notfound'
-  }
+    redirectTo: 'notfound',
+  },
 ];
 
 @NgModule({
