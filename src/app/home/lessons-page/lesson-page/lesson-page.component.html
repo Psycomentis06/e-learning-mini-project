@@ -17,7 +17,10 @@
         <header class="mx-4 h-[60px] flex items-center">
             <div class="w-full">
                 <h1 class="text-3xl  w-fit ml-2   text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500 border-l-2 border-skin-base-primary-500 dark:border-skin-base-inverted-primary-500"> {{currentCourse.name}} </h1>
-                <h5 class=" text-skin-base-secondary-900 dark:text-skin-base-inverted-secondary-900 opacity-75 text-sm ml-4"> Last Update: {{currentCourse.lastUpdate}} </h5>
+                <div class="flex justify-between w-1/2">
+                    <h5 class=" text-skin-base-secondary-900 dark:text-skin-base-inverted-secondary-900 opacity-75 text-sm ml-4"> Last Update: {{currentCourse.lastUpdate}} </h5>
+                    <h5 class=" text-skin-base-secondary-900 dark:text-skin-base-inverted-secondary-900 opacity-75 text-sm ml-4"> Version: {{currentCourse.version}} </h5>
+                </div>
             </div>
             <div class="w-1/5 flex  justify-around">
             <a routerLink="lessons" class="flex items-center justify-center lg:hover:text-skin-base-secondary-100 bg-skin-base-primary-600 dark:bg-skin-base-inverted-primary-600  w-9 h-9 rounded-full   transition duration-150 ease-linear text-center" title="Go Back">
