@@ -4,6 +4,9 @@
 
 export const environment = {
   production: false,
+  api: {
+    api_1: "localhost:3000"
+  },
   theme: {
     presets: [
       {
