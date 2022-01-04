@@ -1,0 +1,7 @@
+.lesson-page {
+    .sidebar {
+        &::-webkit-scrollbar {
+            visibility: hidden;
+        }
+    }
+}

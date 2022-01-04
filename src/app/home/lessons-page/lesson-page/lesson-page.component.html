@@ -1,2 +1,47 @@
-<h1> Hello </h1>
-<router-outlet></router-outlet>
+<section class="relative w-full h-screen overflow-hidden lesson-page" *ngIf="($courseObservable | async) as currentCourse; else noDataTemp ">
+    <aside class=" sidebar w-[250px] h-full overflow-scroll  bg-skin-base-nav-bg dark:bg-skin-base-inverted-nav-bg text-skin-base-nav-color dark:text-skin-base-inverted-nav-color float-left">
+    <!-- Sidebar -->
+       <ul>
+           <li *ngFor="let c of currentCourse.chapters; index as i">
+               <a class="hover:underline" routerLinkActive="decoration-skin-base-primary-500 dark:decoration-skin-base-inverted-primary-500"  [routerLink]="[c.id]"> {{(i+1) + '. ' + c.title}} </a>
+               <ul class="ml-3 my-2">
+                   <li *ngFor="let l of c.lessons; index as j;">
+                       <a class="hover:underline" [routerLink]="[c.id ,l.id]"> {{(i+1) + '.' + (j+1) + '. ' + l.title}} </a>
+                   </li>
+               </ul>
+           </li>
+       </ul>
+    </aside>
+    <div>
+        <!-- Header -->
+        <header class="mx-4 h-[60px] flex items-center">
+            <div class="w-full">
+                <h1 class="text-3xl  w-fit ml-2   text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500 border-l-2 border-skin-base-primary-500 dark:border-skin-base-inverted-primary-500"> {{currentCourse.name}} </h1>
+                <h5 class=" text-skin-base-secondary-900 dark:text-skin-base-inverted-secondary-900 opacity-75 text-sm ml-4"> Last Update: {{currentCourse.lastUpdate}} </h5>
+            </div>
+            <div class="w-1/5 flex  justify-around">
+            <a routerLink="lessons" class="flex items-center justify-center lg:hover:text-skin-base-secondary-100 bg-skin-base-primary-600 dark:bg-skin-base-inverted-primary-600  w-9 h-9 rounded-full   transition duration-150 ease-linear text-center" title="Go Back">
+                <fa-icon [icon]="fontAwesomeIcons.faChevronLeft" class="block lg:text-base"></fa-icon>
+                <span class="lg:hidden">Go Back</span>
+            </a>
+            <button class="flex items-center justify-center lg:hover:text-skin-base-secondary-100 bg-skin-base-primary-600 dark:bg-skin-base-inverted-primary-600  w-9 h-9 rounded-full   transition duration-150 ease-linear text-center" title="Bookmarks">
+                <fa-icon [icon]="fontAwesomeIcons.faBookmark" class="block lg:text-base"></fa-icon>
+                <span class="lg:hidden">BookMarks</span>
+            </button>
+                <button (click)="themeModalService.open()" class="flex items-center justify-center lg:hover:text-skin-base-secondary-100 bg-skin-base-primary-600 dark:bg-skin-base-inverted-primary-600  w-9 h-9 rounded-full   transition duration-150 ease-linear text-center" title="Account">
+                <fa-icon [icon]="fontAwesomeIcons.faUser" class="block lg:text-base"></fa-icon>
+                <span class="lg:hidden">Account</span>
+            </button>
+            <button (click)="themeModalService.open()" class="flex items-center justify-center lg:hover:text-skin-base-secondary-100 bg-skin-base-primary-600 dark:bg-skin-base-inverted-primary-600  w-9 h-9 rounded-full   transition duration-150 ease-linear text-center" title="Change Theme">
+                <fa-icon [icon]="fontAwesomeIcons.faPaintBrush" class="block lg:text-base"></fa-icon>
+                <span class="lg:hidden">Change Theme</span>
+            </button>
+            </div>
+        </header>
+        <!-- Content -->
+        <router-outlet></router-outlet>
+    </div>
+</section>
+<ng-template #noDataTemp>
+    <h1> No Data </h1>
+</ng-template>
