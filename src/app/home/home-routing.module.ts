@@ -9,6 +9,10 @@ let routes: Routes = [
     {
         path: 'pricing',
         loadChildren: () => import('./pricing-page/pricing-page.module').then(m => m.PricingPageModule)
+    },
+    {
+        path: 'lessons',
+        loadChildren: () => import('./lessons-page/lessons-page.module').then(m => m.LessonsPageModule)
     }
 ]
 
