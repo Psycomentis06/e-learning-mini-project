@@ -1,5 +1,5 @@
 <section class="h-screen overflow-y-scroll">
-    <div *ngIf="($courseObservable | async) as currentCourse">
+    <div *ngIf="($courseObservable | async) as currentCourse; else noDataTmp">
             <img  class="w-[400px] h-[300px] object-cover mx-auto" [src]="currentCourse.cover" [alt]=" 'Course' + currentCourse.name + '\'s Cover page' ">
             <p class="text-justify px-3 py-2"> {{currentCourse.description}} </p>
     </div>
