@@ -1,5 +1,5 @@
 <section class="relative w-full h-screen overflow-hidden lesson-page" *ngIf="($courseObservable | async) as currentCourse; else noDataTemp ">
-    <aside class=" sidebar w-[250px] h-full overflow-scroll  bg-skin-base-nav-bg dark:bg-skin-base-inverted-nav-bg text-skin-base-nav-color dark:text-skin-base-inverted-nav-color float-left">
+    <aside class=" z-20 sidebar w-[250px] h-full overflow-scroll  bg-skin-base-nav-bg dark:bg-skin-base-inverted-nav-bg text-skin-base-nav-color dark:text-skin-base-inverted-nav-color float-left">
     <!-- Sidebar -->
        <ul>
            <li *ngFor="let c of currentCourse.chapters; index as i">
@@ -42,7 +42,9 @@
             </div>
         </header>
         <!-- Content -->
-        <router-outlet></router-outlet>
+        <div class="relative -z-10"  [@lessonsRouterAnimations]="prepareRoutes(outlet)">
+            <router-outlet #outlet="outlet"></router-outlet>
+        </div>
     </div>
 </section>
 <ng-template #noDataTemp>

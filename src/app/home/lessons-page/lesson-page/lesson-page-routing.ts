@@ -27,6 +27,7 @@ const routes: Routes = [
         data: {
           hideHeader: true,
           hideFooter: false,
+          animation: 'isLeft'
         },
       },
       {
@@ -35,6 +36,7 @@ const routes: Routes = [
         data: {
           hideHeader: true,
           hideFooter: false,
+          animation: 'isRight'
         },
       },
     ],
