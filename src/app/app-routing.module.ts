@@ -11,8 +11,9 @@ const routes: Routes = [
     path: 'notfound',
     component: NotfoundComponent,
     data: {
-      noHeaderFooter: true
-    }
+      hideHeader: true,
+      hideFooter: true,
+    },
   },
   {
     path: '**',
