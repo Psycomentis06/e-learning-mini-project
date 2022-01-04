@@ -1,1 +1,31 @@
-<p>lessons-page works!</p>
+<!-- Small screen message -->
+<div class="md:hidden w-screen h-screen flex items-center justify-center">
+    <div class="bg-skin-base-danger-100 dark:bg-skin-base-inverted-danger-100 p-4 shadow-md">
+        <h1 class="text-center text-skin-base-danger-500 dark:text-skin-base-inverted-danger-500 text-4xl">Sorry!</h1>
+        <p>
+            Currently this page is not available for small screen devices. It will soon.
+            You can open it in desktop mode if you want.
+        </p>
+    </div>
+</div>
+
+<!-- content -->
+<section class="mt-[100px] w-full h-screen container">
+    <div class="my-5 w-full flex justify-center">
+        <input type="text" placeholder="Filter courses" #textFilterInput (keyup)="search(textFilterInput.value)" class="w-1/4  px-3 py-2 rounded-md outline outline-2 outline-skin-base-primary-500 dark:outline-skin-base-inverted-primary-500 focus:outline-skin-base-primary-500 dark:focus:outline-skin-base-inverted-primary-500  focus:outline-2">
+    </div>
+    <div class="container flex justify-around">
+        <div  *ngFor="let c of courses" class="w-[300px] h-[400px] group  bg-skin-base-secondary-200 dark:bg-skin-base-inverted-secondary-200 shadow-md rounded-lg transition duration-200" >
+            <img [src]="c.cover" [alt]="c.name + ' cover image' " class="w-full h-[150px] object-cover rounded-lg grayscale-0 group-hover:grayscale transition duration-200" >
+            <div class="px-2 py-1">
+                <h1 class="text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600 font-nanum-gothic font-semibold text-xl"> {{c.name}} </h1>
+                <p class="text-justify mt-3 pl-2 pr-3 border-l-2 border-skin-base-primary-400 dark:border-skin-base-inverted-primary-400 text-skin-base-secondary-600 dark:text-skin-base-inverted-secondary-600">
+                    {{c.description}}
+                </p>
+                <div class="mt-5">
+                    <a [routerLink]="[c.id]" class=" w-full text-center bg-skin-base-secondary-900 text-skin-base-primary-500 dark:bg-skin-base-inverted-secondary-900 dark:text-skin-base-inverted-primary-500  hover:bg-skin-base-primary-600 hover:text-skin-base-secondary-100  dark:hover:text-skin-base-inverted-secondary-100 dark:hover:bg-skin-base-inverted-primary-600  px-4 py-2 uppercase transition duration-200 ease-in-out"> Open Course </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
