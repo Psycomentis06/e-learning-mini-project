@@ -1,7 +1,7 @@
-<app-navbar *ngIf="!hideHeaderFooter"></app-navbar>
-<section [ngClass]="!hideHeaderFooter ? 'mt-[70px]' : ''">
+<app-navbar *ngIf="!hideHeader"></app-navbar>
+<section [ngClass]="!hideHeader ? 'mt-[70px]' : ''">
     <router-outlet></router-outlet>
 </section>
-<app-footer *ngIf="!hideHeaderFooter"></app-footer>
+<app-footer *ngIf="!hideFooter"></app-footer>
 <app-search @fadeInOut *ngIf="(searchService.visible | async)"></app-search>
 <app-theme-modal @fadeInOut *ngIf="(themeModalService.$visible | async)"></app-theme-modal>

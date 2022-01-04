@@ -17,9 +17,11 @@ import { ThemeService } from '../service/theme.service';
 export class LayoutComponent implements OnInit, OnDestroy {
 
   themeSubscription: Subscription|undefined;
-  hideHeaderFooter: boolean
+  hideHeader: boolean
+  hideFooter: boolean
   constructor(public searchService: SearchService, public themeModalService: ThemeModalService, public themeService: ThemeService, private router: Router, private activeRoute: ActivatedRoute) {
-    this.hideHeaderFooter = false;
+    this.hideHeader = false;
+    this.hideFooter = false;
   }
   ngOnInit(): void {
     this.themeSubscription = this.themeService.$theme.subscribe();
@@ -28,8 +30,10 @@ export class LayoutComponent implements OnInit, OnDestroy {
         console.log("Navigation Start");
         
       } else if (e instanceof ActivationStart) {
-        if (e.snapshot.data['noHeaderFooter'] === true) this.hideHeaderFooter = true;
-        else this.hideHeaderFooter = false;
+        if (e.snapshot.data['hideHeader'] === true) this.hideHeader = true;
+        else this.hideHeader = false;
+        if (e.snapshot.data['hideFooter'] === true) this.hideFooter = true;
+        else this.hideFooter = false;
       } else if (e instanceof NavigationEnd) {
         console.log("NavigationEnd");
         
