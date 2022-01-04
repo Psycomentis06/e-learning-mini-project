@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   api: {
-    api_1: "localhost:3000"
+    api_1: "http://localhost:3000"
   },
   theme: {
     presets: [
