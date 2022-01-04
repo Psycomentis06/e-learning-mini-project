@@ -15,8 +15,8 @@ export interface ILesson {
     id: number
     title: string;
     video?: ILessonVideo;
-    description: string;
-    attachments: ILessonAttachment[]
+    description: string[];
+    attachments?: ILessonAttachment[]
     difficulty: "EASY" | "MEDIUM" | "HARD" | "VERY HARD"
     periodToComplete: number
 }
