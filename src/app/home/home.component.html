@@ -45,13 +45,7 @@
     </h1>
   </div>
   <div class="flex flex-col lg:flex-row justify-around flex-wrap">
-    <app-course-card
-      bg-color="rgb(155, 15, 255)"
-      class="lg:w-[300px]"
-    ></app-course-card>
-    <app-course-card class="lg:w-[300px]"></app-course-card>
-    <app-course-card class="lg:w-[300px]"></app-course-card>
-    <app-course-card class="lg:w-[300px]"></app-course-card>
+    <app-course-card *ngFor="let l of languages" [title]="l.name" [bg-color]="l.metaData.theme.bg" [text-color]="l.metaData.theme.text" [description]="l.description" class="lg:w-[300px]"></app-course-card>
   </div>
 </section>
 <!-- Courses Section -->
@@ -72,7 +66,7 @@
       class="lg:w-[300px]"
     ></app-course-card>
     <app-course-card class="lg:w-[300px]"></app-course-card>
-    <app-course-card class="lg:w-[300px]"></app-course-card>
+    <app-course-card bg-color="rgb(233,116,23)" class="lg:w-[300px]"></app-course-card>
     <app-course-card class="lg:w-[300px]"></app-course-card>
   </div>
 </section>
@@ -94,7 +88,7 @@
       class="lg:w-[300px]"
     ></app-course-card>
     <app-course-card class="lg:w-[300px]"></app-course-card>
-    <app-course-card class="lg:w-[300px]"></app-course-card>
+    <app-course-card bg-color="rgb(230, 115, 200)" class="lg:w-[300px]"></app-course-card>
     <app-course-card class="lg:w-[300px]"></app-course-card>
   </div>
 </section>
