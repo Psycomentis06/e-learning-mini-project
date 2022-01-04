@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SearchComponent } from './components/search/search.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ThemeModalComponent } from './components/theme-modal/theme-modal.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ThemeModalComponent } from './components/theme-modal/theme-modal.compon
     RouterModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   exports: [LayoutComponent],
 })
