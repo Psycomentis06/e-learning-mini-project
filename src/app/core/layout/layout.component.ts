@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute, ActivationStart, NavigationEnd, NavigationStart, Router, RoutesRecognized } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { fadeInOut } from '../animation/fade-in-out.animation';
 import { SearchService } from '../service/search.service';
@@ -16,12 +17,24 @@ import { ThemeService } from '../service/theme.service';
 export class LayoutComponent implements OnInit, OnDestroy {
 
   themeSubscription: Subscription|undefined;
-  constructor(public searchService: SearchService, public themeModalService: ThemeModalService, public themeService: ThemeService) {
-    
+  hideHeaderFooter: boolean
+  constructor(public searchService: SearchService, public themeModalService: ThemeModalService, public themeService: ThemeService, private router: Router, private activeRoute: ActivatedRoute) {
+    this.hideHeaderFooter = false;
   }
-  
   ngOnInit(): void {
-    this.themeSubscription = this.themeService.$theme.subscribe()
+    this.themeSubscription = this.themeService.$theme.subscribe();
+    this.router.events.subscribe(e => {
+      if (e instanceof NavigationStart) {
+        console.log("Navigation Start");
+        
+      } else if (e instanceof ActivationStart) {
+        if (e.snapshot.data['noHeaderFooter'] === true) this.hideHeaderFooter = true;
+        else this.hideHeaderFooter = false;
+      } else if (e instanceof NavigationEnd) {
+        console.log("NavigationEnd");
+        
+      }
+    })
   }
 
   ngOnDestroy(): void {
