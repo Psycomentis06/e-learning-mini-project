@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LessonPageComponent } from './lesson-page.component';
 import { LessonPageRoutingModule } from './lesson-page-routing';
 import { LessonChapterComponent } from './lesson-chapter/lesson-chapter.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -10,7 +11,8 @@ import { LessonChapterComponent } from './lesson-chapter/lesson-chapter.componen
   declarations: [LessonPageComponent, LessonChapterComponent],
   imports: [
     CommonModule,
-    LessonPageRoutingModule
+    LessonPageRoutingModule,
+    FontAwesomeModule
   ]
 })
 export class LessonPageModule { }
