@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { LessonChapterComponent } from "./lesson-chapter/lesson-chapter.component";
+import { LessonOverviewComponent } from "./lesson-overview/lesson-overview.component";
 import { LessonPageComponent } from "./lesson-page.component";
 const routes: Routes = [
     {
@@ -11,6 +12,10 @@ const routes: Routes = [
             hideFooter: false
         },
         children: [
+            {
+                path: '',
+                component: LessonOverviewComponent
+            },
             {
                 path: 'chapter',
                 component: LessonChapterComponent
