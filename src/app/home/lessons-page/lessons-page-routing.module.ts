@@ -6,6 +6,10 @@ const routes:Routes = [
     {
         path: '',
         component: LessonsPageComponent,
+    },
+    {
+        path: 'lesson',
+        loadChildren: () => import('./lesson-page/lesson-page.module').then(m => m.LessonPageModule)
     }
 ]
 
