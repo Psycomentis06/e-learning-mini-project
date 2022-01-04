@@ -11,8 +11,8 @@ export class LanguageService {
   private API_URL = environment.api.api_1;
   constructor(private http: HttpClient) { }
 
-  getAll(limit: number = 20):Observable<ILanguage>  {
-    return this.http.get<ILanguage>(this.API_URL + "/languages", {
+  getAll(limit: number = 20):Observable<ILanguage[]>  {
+    return this.http.get<ILanguage[]>(this.API_URL + "/languages", {
       params: {
         limit
       }
