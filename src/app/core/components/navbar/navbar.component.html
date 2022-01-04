@@ -1,16 +1,16 @@
-<header class="h-[70px] bg-white w-full flex flex-row items-center main-navbar lg:bg-black fixed top-0 z-20">
+<header class="h-[70px] bg-skin-base-nav-color dark:bg-skin-base-inverted-nav-color w-full flex flex-row items-center main-navbar lg:bg-skin-base-nav-bg lg:dark:bg-skin-base-inverted-nav-bg fixed top-0 z-20">
   <div class="flex justify-between w-full">
-    <h3 class="text-2xl font-semibold text-pink-500 mx-2"> <a routerLink="/">E-Learning</a> </h3>
-    <button (click)="navbarService.open()" class="bg-pink-100 text-pink-700 px-2 py-1 mr-3 rounded-md outline-hidden outline-offset-1 outline-pink-400 focus:outline  transition duration-150 lg:hidden">
-      <fa-icon [icon]="fontAwesomeIcons.faBars" size="lg" class="text-pink-500"></fa-icon>
+    <h3 class="text-2xl font-semibold text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500 mx-2"> <a routerLink="/">E-Learning</a> </h3>
+    <button (click)="navbarService.open()" class="bg-skin-base-primary-100 dark:bg-skin-base-inverted-primary-100 text-skin-base-primary-700 dark:text-skin-base-inverted-primary-700 px-2 py-1 mr-3 rounded-md outline-hidden outline-offset-1 outline-skin-base-primary-400 dark:outline-skin-base-inverted-primary-400 focus:outline  transition duration-150 lg:hidden">
+      <fa-icon [icon]="fontAwesomeIcons.faBars" size="lg" class="text-skin-base-primary-500 dark:text-skin-base-inverted-primary-500"></fa-icon>
     </button>
   </div>
-  <div (click)="navbarService.close()"  [ngClass]="(navbarMenu|async) ? 'z-[28] lg:z-auto fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 backdrop-blur-md' : 'bg-opacity-0' " class="transition duration-200 lg:hidden">
+  <div (click)="navbarService.close()"  [ngClass]="(navbarMenu|async) ? 'z-[28] lg:z-auto fixed top-0 left-0 right-0 bottom-0 bg-skin-base-nav-bg dark:bg-skin-base-inverted-nav-bg bg-opacity-75 backdrop-blur-md' : 'bg-opacity-0' " class="transition duration-200 lg:hidden">
     <!-- overlay -->
   </div>
   <div
     [ngClass]="(navbarMenu|async) ? 'left-0' : 'left-[-250px]'"
-    class="z-[29] lg:z-auto  min-h-screen fixed bg-pink-900 shadow-lg flex flex-row top-0 items-start nav-link-container transition duration-700 lg:relative lg:flex-col lg:w-full lg:h-full lg:items-center lg:bg-inherit lg:min-h-full"
+    class="z-[29] lg:z-auto  min-h-screen fixed bg-skin-base-primary-900 dark:bg-skin-base-inverted-primary-900 shadow-lg flex flex-row top-0 items-start nav-link-container transition duration-700 lg:relative lg:flex-col lg:w-full lg:h-full lg:items-center lg:bg-inherit lg:min-h-full"
   >
     <ul
       class="
@@ -32,40 +32,40 @@
     >
       <li class="text-sm font-bold font-nanum-gothic lg:font-source-sans-pro lg:font-thin">
           <!-- Close menu button -->
-        <button (click)="navbarService.close()" class=" lg:hidden flex items-center bg-pink-100 text-pink-600 shadow-pink-100 shadow-sm px-2 py-1 rounded-lg hover:bg-pink-200 transition duration-150 focus:outline-pink-500 outline-offset-1  outline-hidden focus:bg-pink-200">
+        <button (click)="navbarService.close()" class=" lg:hidden flex items-center bg-skin-base-primary-100 dark:bg-skin-base-inverted-primary-100 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600 shadow-skin-base-primary-100 dark:shadow-skin-base-inverted-primary-100 shadow-sm px-2 py-1 rounded-lg hover:bg-pink-200 transition duration-150 focus:outline-pink-500 outline-offset-1  outline-hidden focus:bg-pink-200">
             <fa-icon [icon]="fontAwesomeIcons.faAngleLeft" size="lg"></fa-icon>
             Close menu
         </button>
       </li>
-      <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white transition duration-100">
-        <a routerLink="lessons" routerLinkActive="text-pink-600 decoration-white">Lessons</a>
+      <li class="hover:text-skin-base-primary-300 dark:hover:text-skin-base-inverted-primary-300 lg:underline lg:decoration-skin-base-primary-600 lg:dark:decoration-skin-base-inverted-primary-600 lg:hover:text-skin-base-primary-600 lg:dark:text-skin-base-inverted-primary-600 lg:hover:decoration-skin-base-nav-color lg:dark:hover:decoration-skin-base-inverted-nav-color transition duration-100">
+        <a routerLink="lessons" routerLinkActive="text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600 decoration-skin-base-nav-color lg:dark:hover:decoration-skin-base-inverted-nav-color">Lessons</a>
       </li>
-      <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white  transition duration-100">
-        <a routerLink="pricing" routerLinkActive="text-pink-600 decoration-white">Pricing</a>
+      <li class="hover:text-skin-base-primary-300 dark:hover:text-skin-base-inverted-primary-300 lg:underline lg:decoration-skin-base-primary-600 lg:dark:decoration-skin-base-inverted-primary-600 lg:hover:text-skin-base-primary-600 lg:dark:text-skin-base-inverted-primary-600 lg:hover:decoration-skin-base-nav-color lg:dark:hover:decoration-skin-base-inverted-nav-color  transition duration-100">
+        <a routerLink="pricing" routerLinkActive="text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600 decoration-skin-base-nav-color lg:dark:hover:decoration-skin-base-inverted-nav-color">Pricing</a>
       </li>
-      <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white  transition duration-100">
-        <a routerLink="support" routerLinkActive="text-pink-600 decoration-white">Support</a>
+      <li class="hover:text-skin-base-primary-300 dark:hover:text-skin-base-inverted-primary-300 lg:underline lg:decoration-skin-base-primary-600 lg:dark:decoration-skin-base-inverted-primary-600 lg:hover:text-skin-base-primary-600 lg:dark:text-skin-base-inverted-primary-600 lg:hover:decoration-skin-base-nav-color lg:dark:hover:decoration-skin-base-inverted-nav-color  transition duration-100">
+        <a routerLink="support" routerLinkActive="text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600 decoration-skin-base-nav-color lg:dark:hover:decoration-skin-base-inverted-nav-color">Support</a>
       </li>
-      <li class="hover:text-pink-300 lg:underline lg:decoration-pink-600 lg:hover:text-pink-600 lg:hover:decoration-white  transition duration-100">
-        <a routerLink="about" routerLinkActive="text-pink-600 decoration-white">About</a>
+      <li class="hover:text-skin-base-primary-300 dark:hover:text-skin-base-inverted-primary-300 lg:underline lg:decoration-skin-base-primary-600 lg:dark:decoration-skin-base-inverted-primary-600 lg:hover:text-skin-base-primary-600 lg:dark:text-skin-base-inverted-primary-600 lg:hover:decoration-skin-base-nav-color lg:dark:hover:decoration-skin-base-inverted-nav-color  transition duration-100">
+        <a routerLink="about" routerLinkActive="text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600 decoration-skin-base-nav-color lg:dark:hover:decoration-skin-base-inverted-nav-color">About</a>
       </li>
       <li class="lg:hidden mb-[50px]">
         <span>Categories</span>
         <div class="flex items-start flex-wrap" >  
-          <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
-          <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
-          <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
-          <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
-          <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
-          <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
-          <a href="#"  class="mx-2 my-1  text-sm hover:text-violet-400 transition capitalize  duration-150">tag1</a>
+          <a href="#"  class="mx-2 my-1  text-sm hover:text-skin-base-success-400 dark:text-skin-base-inverted-success-400 transition capitalize  duration-150">tag1</a>
+          <a href="#"  class="mx-2 my-1  text-sm hover:text-skin-base-success-400 dark:text-skin-base-inverted-success-400 transition capitalize  duration-150">tag1</a>
+          <a href="#"  class="mx-2 my-1  text-sm hover:text-skin-base-success-400 dark:text-skin-base-inverted-success-400 transition capitalize  duration-150">tag1</a>
+          <a href="#"  class="mx-2 my-1  text-sm hover:text-skin-base-success-400 dark:text-skin-base-inverted-success-400 transition capitalize  duration-150">tag1</a>
+          <a href="#"  class="mx-2 my-1  text-sm hover:text-skin-base-success-400 dark:text-skin-base-inverted-success-400 transition capitalize  duration-150">tag1</a>
+          <a href="#"  class="mx-2 my-1  text-sm hover:text-skin-base-success-400 dark:text-skin-base-inverted-success-400 transition capitalize  duration-150">tag1</a>
+          <a href="#"  class="mx-2 my-1  text-sm hover:text-skin-base-success-400 dark:text-skin-base-inverted-success-400 transition capitalize  duration-150">tag1</a>
         </div>
         </li>
     </ul>
   </div>
-  <ul class="z-50 lg:z-0  fixed bottom-0 left-0 right-0 bg-pink-800 flex justify-around items-center h-[50px] text-white text-sm lg:relative lg:h-full lg:w-[550px] lg:bg-transparent">
+  <ul class="z-50 lg:z-0  fixed bottom-0 left-0 right-0 bg-skin-base-primary-800 dark:bg-skin-base-inverted-primary-800 flex justify-around items-center h-[50px] text-skin-base-nav-color dark:text-skin-base-inverted-nav-color text-sm lg:relative lg:h-full lg:w-[550px] lg:bg-transparent">
       <!-- Actions -->
-      <li [ngClass]="(searchService.visible|async) ? 'text-pink-600' : '' "  class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Search">
+      <li [ngClass]="(searchService.visible|async) ? 'text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600' : '' "  class="lg:hover:text-skin-base-primary-600 lg:dark:text-skin-base-inverted-primary-600 transition duration-150 ease-linear text-center" title="Search">
         <button (click)="searchService.show()">
         <fa-icon [icon]="fontAwesomeIcons.faSearch" class="block lg:text-base"></fa-icon>
         <span class="lg:hidden">
@@ -73,15 +73,15 @@
         </span>
         </button>
       </li>
-      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Sign In">
+      <li class="lg:hover:text-skin-base-primary-600 lg:dark:text-skin-base-inverted-primary-600 transition duration-150 ease-linear text-center" title="Sign In">
         <fa-icon [icon]="fontAwesomeIcons.faUser" class="block lg:text-base"></fa-icon>
         <span class="lg:hidden">Sign in</span>
       </li>
-      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Bookmarks">
+      <li class="lg:hover:text-skin-base-primary-600 lg:dark:text-skin-base-inverted-primary-600 transition duration-150 ease-linear text-center" title="Bookmarks">
         <fa-icon [icon]="fontAwesomeIcons.faBookmark" class="block lg:text-base"></fa-icon>
         <span class="lg:hidden">bookmarks</span>
       </li>
-      <li class="lg:hover:text-pink-600 transition duration-150 ease-linear text-center" title="Change Theme">
+      <li class="lg:hover:text-skin-base-primary-600 lg:dark:text-skin-base-inverted-primary-600 transition duration-150 ease-linear text-center" title="Change Theme">
        <button (click)="themeModalService.open()">
           <fa-icon [icon]="fontAwesomeIcons.faPaintBrush" class="block lg:text-base"></fa-icon>
           <span class="lg:hidden">Change Theme</span>
