@@ -10,7 +10,7 @@
   </div>
   <div
     [ngClass]="(navbarMenu|async) ? 'left-0' : 'left-[-250px]'"
-    class="z-[29] lg:z-auto  min-h-screen fixed bg-skin-base-primary-900 dark:bg-skin-base-inverted-primary-900 shadow-lg flex flex-row top-0 items-start nav-link-container transition duration-700 lg:relative lg:flex-col lg:w-full lg:h-full lg:items-center lg:bg-inherit lg:min-h-full"
+    class="z-[29] lg:z-auto  min-h-screen fixed bg-skin-base-primary-900 dark:bg-skin-base-inverted-primary-900 shadow-lg flex flex-row top-0 items-start nav-link-container transition duration-700 lg:relative lg:flex-col lg:w-full lg:h-full lg:items-center lg:bg-skin-base-nav-bg lg:dark:bg-skin-base-inverted-nav-bg lg:min-h-full"
   >
     <ul
       class="
@@ -63,7 +63,7 @@
         </li>
     </ul>
   </div>
-  <ul class="z-50 lg:z-0  fixed bottom-0 left-0 right-0 bg-skin-base-primary-800 dark:bg-skin-base-inverted-primary-800 flex justify-around items-center h-[50px] text-skin-base-nav-color dark:text-skin-base-inverted-nav-color text-sm lg:relative lg:h-full lg:w-[550px] lg:bg-transparent">
+  <ul class="z-50 lg:z-0  fixed bottom-0 left-0 right-0 bg-skin-base-primary-800 dark:bg-skin-base-inverted-primary-800 flex justify-around items-center h-[50px] text-skin-base-nav-color dark:text-skin-base-inverted-nav-color text-sm lg:relative lg:h-full lg:w-[550px] lg:bg-skin-base-nav-bg lg:dark:bg-skin-base-inverted-nav-bg">
       <!-- Actions -->
       <li [ngClass]="(searchService.visible|async) ? 'text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600' : '' "  class="lg:hover:text-skin-base-primary-600 lg:dark:text-skin-base-inverted-primary-600 transition duration-150 ease-linear text-center" title="Search">
         <button (click)="searchService.show()">
