@@ -1,0 +1,939 @@
+{
+  "languages": [
+    {
+      "id": 1,
+      "name": "PHP",
+      "logo": "assets/logo/php.png",
+      "description": "PHP is a general-purpose scripting language geared towards web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1994. The PHP reference implementation is now produced by The PHP Group. PHP originally stood for Personal Home Page, but it now stands for the recursive initialism PHP: Hypertext Preprocessor.",
+      "metaData": {
+        "theme": {
+          "bg": "rgb(233,116,23)",
+          "text": "rgb(230, 230, 230)"
+        }
+      },
+      "frameworks": [
+        {
+          "id": 1,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        },
+        {
+          "id": 6,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        },
+        {
+          "id": 8,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        },
+        {
+          "id": 9,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        },
+        {
+          "id": 10,
+          "name": "Laravel",
+          "logo": "assets/logo/laravel.png",
+          "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+          "metaData": {
+            "theme": {
+              "bg": "#54FAF1",
+              "text": "#aaa"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Node JS",
+      "logo": "assets/logo/nodejs.png",
+      "description": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.",
+      "metaData": {
+        "theme": {
+          "bg": "rgb(230, 115, 200)",
+          "text": "rgb(230, 230, 230)"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Java",
+      "logo": "assets/logo/java.png",
+      "description": "Java is a set of computer software and specifications developed by James Gosling at Sun Microsystems, which was later acquired by the Oracle Corporation, that provides a system for developing application software and deploying it in a cross-platform computing environment. ",
+      "metaData": {
+        "theme": {
+          "bg": "rgb(155, 15, 255)",
+          "text": "rgb(230, 230, 230)"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Python",
+      "logo": "assets/logo/python.png",
+      "description": "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.",
+      "metaData": {
+        "theme": {
+          "bg": "rgb(0, 0, 0)",
+          "text": "rgb(255, 255, 255)"
+        }
+      }
+    }
+  ],
+  "frameworks": [
+    {
+      "id": 1,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "Laravel",
+      "logo": "assets/logo/laravel.png",
+      "description": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar. The source code of Laravel is hosted on GitHub and licensed under the terms of MIT License.",
+      "metaData": {
+        "theme": {
+          "bg": "#54FAF1",
+          "text": "#aaa"
+        }
+      }
+    }
+  ],
+  "courses": [
+    {
+      "id": 1000,
+      "name": "PHP sessions for beginners",
+      "description": "PHP course for learning sessions managment with some tips and tricks that will help you in your PHP carrer. This course contain 3 modules with beginner level.",
+      "teacher": {
+        "id": 2000,
+        "name": "Ali Amor",
+        "university": "ISET Sousse",
+        "description": "Matster degree student in software engeneering and fast apps developpment",
+        "avatar": "assets/avatar/male2.svg",
+        "courses": [],
+        "email": "alibenamor30@gmail.com"
+      },
+      "version": "1.0.1",
+      "cover": "https://www.educative.io/cdn-cgi/image/f=auto,fit=cover,w=600/v2api/collection/10370001/5669965877215232/image/5493020851961856",
+      "lastUpdate": "01/04/2022",
+      "chapters": [
+        {
+          "id": 5000,
+          "title": "PHP Session basics",
+          "description": "Start learning PHP basics for session managment, session creation, update, reset",
+          "lessons": [
+            {
+              "id": 8000,
+              "title": "Introduction",
+              "description": ["In this lessons we are going to define what is a session?, why sessions are important ?, where we use them?"],
+              "difficulty": "EASY",
+              "periodToComplete": 2
+            },
+            {
+              "id": 8001,
+              "title": "What is a session?",
+              "description": [
+                "When you work with an application, you open it, do some changes, and then you close it. This is much like a Session. The computer knows who you are. It knows when you start the application and when you end. But on the internet there is one problem: the web server does not know who you are or what you do, because the HTTP address doesn't maintain state.",
+                "Session variables solve this problem by storing user information to be used across multiple pages (e.g. username, favorite color, etc). By default, session variables last until the user closes the browser.",
+                "So; Session variables hold information about one single user, and are available to all pages in one application."
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 3
+            },
+            {
+              "id": 8002,
+              "title": "Start a PHP Session",
+              "description": [
+                "A session is started with the <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_start() </span> function.",
+                "Session variables are set with the PHP global variable: $_SESSION.",
+                "Now, let's create a new page called \"demo_session1.php\". In this page, we start a new PHP session and set some session variables:",
+                "$code<?php // Start the session session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Set session variables $_SESSION[\"favcolor\"] = \"green\"; $_SESSION[\"favanimal\"] = \"cat\"; echo \"Session variables are set.\"; ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            },
+            {
+              "id": 8003,
+              "title": "Get PHP Session Variable Values",
+              "description": [
+                "Next, we create another page called \"demo_session2.php\". From this page, we will access the session information we set on the first page (\"demo_session1.php\").",
+                "Notice that session variables are not passed individually to each new page, instead they are retrieved from the session we open at the beginning of each page (<span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\">session_start()</span>).",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Echo session variables that were set on previous page echo \"Favorite color is \" . $_SESSION[\"favcolor\"] . \".<br>\"; echo \"Favorite animal is \" . $_SESSION[\"favanimal\"] . \".\"; ?> </body> </html>"
+              ],
+              "difficulty": "MEDIUM",
+              "periodToComplete": 10
+            }
+          ]
+        },
+        {
+          "id": 5001,
+          "title": "PHP Session Advanced",
+          "description": "Advanced tricks with PHP sessions.",
+          "lessons": [
+            {
+              "id": 8005,
+              "title": "Modify a PHP Session Variable",
+              "description": [
+                "To change a session variable, just overwrite it:",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // to change a session variable, just overwrite it $_SESSION[\"favcolor\"] = \"yellow\"; print_r($_SESSION); ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            },
+            {
+              "id": 8006,
+              "title": "Destroy a PHP Session",
+              "description": [
+                "To remove all global session variables and destroy the session, use <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_unset()</span> and <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_destroy()</span>:",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // remove all session variables session_unset(); // destroy the session session_destroy(); ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            }
+          ]
+        },
+        {
+          "id": 5002,
+          "title": "Authentication Exemple",
+          "description": "After we learned how to manage sessions in PHP, we are going to apply what we learned in a simple exemple which is user authentication",
+          "lessons": [
+            {
+              "id": 8008,
+              "title": "User Authentication",
+              "description": [
+                "In this exemple we will try to give you the steps and you do it on your own to test yourself. You can always click the help button to see the final code but try to avoid it:",
+                "1. Create login.html and create a login form in this page with user & password.",
+                "2. Set form method to POST and form action to login.php",
+                "3. In login.php created an array of users with username and password. You can create a one user in single varible as well",
+                "4. Check if submitted data corresponds to what you have in your login.php",
+                "5. If user entred valid data, save it in a session & display his name",
+                "6. create another php file called auth.php, where only if user is availabe in the session can view it's content otherwise redirect him to login.html"
+              ],
+              "difficulty": "MEDIUM",
+              "periodToComplete": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1001,
+      "name": "PHP sessions for beginners",
+      "description": "PHP course for learning sessions managment with some tips and tricks that will help you in your PHP carrer. This course contain 3 modules with beginner level.",
+      "teacher": {
+        "id": 2000,
+        "name": "Ali Amor",
+        "university": "ISET Sousse",
+        "description": "Matster degree student in software engeneering and fast apps developpment",
+        "avatar": "assets/avatar/male2.svg",
+        "courses": [],
+        "email": "alibenamor30@gmail.com"
+      },
+      "version": "1.0.1",
+      "cover": "assets/img/img1.jpg",
+      "lastUpdate": "01/04/2022",
+      "chapters": [
+        {
+          "id": 5000,
+          "title": "PHP Session basics",
+          "description": "Start learning PHP basics for session managment, session creation, update, reset",
+          "lessons": [
+            {
+              "id": 8000,
+              "title": "Introduction",
+              "description": ["In this lessons we are going to define what is a session?, why sessions are important ?, where we use them?"],
+              "difficulty": "EASY",
+              "periodToComplete": 2
+            },
+            {
+              "id": 8001,
+              "title": "What is a session?",
+              "description": [
+                "When you work with an application, you open it, do some changes, and then you close it. This is much like a Session. The computer knows who you are. It knows when you start the application and when you end. But on the internet there is one problem: the web server does not know who you are or what you do, because the HTTP address doesn't maintain state.",
+                "Session variables solve this problem by storing user information to be used across multiple pages (e.g. username, favorite color, etc). By default, session variables last until the user closes the browser.",
+                "So; Session variables hold information about one single user, and are available to all pages in one application."
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 3
+            },
+            {
+              "id": 8002,
+              "title": "Start a PHP Session",
+              "description": [
+                "A session is started with the <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_start() </span> function.",
+                "Session variables are set with the PHP global variable: $_SESSION.",
+                "Now, let's create a new page called \"demo_session1.php\". In this page, we start a new PHP session and set some session variables:",
+                "$code<?php // Start the session session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Set session variables $_SESSION[\"favcolor\"] = \"green\"; $_SESSION[\"favanimal\"] = \"cat\"; echo \"Session variables are set.\"; ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            },
+            {
+              "id": 8003,
+              "title": "Get PHP Session Variable Values",
+              "description": [
+                "Next, we create another page called \"demo_session2.php\". From this page, we will access the session information we set on the first page (\"demo_session1.php\").",
+                "Notice that session variables are not passed individually to each new page, instead they are retrieved from the session we open at the beginning of each page (<span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\">session_start()</span>).",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Echo session variables that were set on previous page echo \"Favorite color is \" . $_SESSION[\"favcolor\"] . \".<br>\"; echo \"Favorite animal is \" . $_SESSION[\"favanimal\"] . \".\"; ?> </body> </html>"
+              ],
+              "difficulty": "MEDIUM",
+              "periodToComplete": 10
+            }
+          ]
+        },
+        {
+          "id": 5001,
+          "title": "PHP Session Advanced",
+          "description": "Advanced tricks with PHP sessions.",
+          "lessons": [
+            {
+              "id": 8005,
+              "title": "Modify a PHP Session Variable",
+              "description": [
+                "To change a session variable, just overwrite it:",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // to change a session variable, just overwrite it $_SESSION[\"favcolor\"] = \"yellow\"; print_r($_SESSION); ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            },
+            {
+              "id": 8006,
+              "title": "Destroy a PHP Session",
+              "description": [
+                "To remove all global session variables and destroy the session, use <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_unset()</span> and <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_destroy()</span>:",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // remove all session variables session_unset(); // destroy the session session_destroy(); ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            }
+          ]
+        },
+        {
+          "id": 5002,
+          "title": "Authentication Exemple",
+          "description": "After we learned how to manage sessions in PHP, we are going to apply what we learned in a simple exemple which is user authentication",
+          "lessons": [
+            {
+              "id": 8008,
+              "title": "User Authentication",
+              "description": [
+                "In this exemple we will try to give you the steps and you do it on your own to test yourself. You can always click the help button to see the final code but try to avoid it:",
+                "1. Create login.html and create a login form in this page with user & password.",
+                "2. Set form method to POST and form action to login.php",
+                "3. In login.php created an array of users with username and password. You can create a one user in single varible as well",
+                "4. Check if submitted data corresponds to what you have in your login.php",
+                "5. If user entred valid data, save it in a session & display his name",
+                "6. create another php file called auth.php, where only if user is availabe in the session can view it's content otherwise redirect him to login.html"
+              ],
+              "difficulty": "MEDIUM",
+              "periodToComplete": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "name": "PHP sessions for beginners",
+      "description": "PHP course for learning sessions managment with some tips and tricks that will help you in your PHP carrer. This course contain 3 modules with beginner level.",
+      "teacher": {
+        "id": 2000,
+        "name": "Ali Amor",
+        "university": "ISET Sousse",
+        "description": "Matster degree student in software engeneering and fast apps developpment",
+        "avatar": "assets/avatar/male2.svg",
+        "courses": [],
+        "email": "alibenamor30@gmail.com"
+      },
+      "version": "1.0.1",
+      "cover": "assets/img/img2.jpg",
+      "lastUpdate": "01/04/2022",
+      "chapters": [
+        {
+          "id": 5000,
+          "title": "PHP Session basics",
+          "description": "Start learning PHP basics for session managment, session creation, update, reset",
+          "lessons": [
+            {
+              "id": 8000,
+              "title": "Introduction",
+              "description": ["In this lessons we are going to define what is a session?, why sessions are important ?, where we use them?"],
+              "difficulty": "EASY",
+              "periodToComplete": 2
+            },
+            {
+              "id": 8001,
+              "title": "What is a session?",
+              "description": [
+                "When you work with an application, you open it, do some changes, and then you close it. This is much like a Session. The computer knows who you are. It knows when you start the application and when you end. But on the internet there is one problem: the web server does not know who you are or what you do, because the HTTP address doesn't maintain state.",
+                "Session variables solve this problem by storing user information to be used across multiple pages (e.g. username, favorite color, etc). By default, session variables last until the user closes the browser.",
+                "So; Session variables hold information about one single user, and are available to all pages in one application."
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 3
+            },
+            {
+              "id": 8002,
+              "title": "Start a PHP Session",
+              "description": [
+                "A session is started with the <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_start() </span> function.",
+                "Session variables are set with the PHP global variable: $_SESSION.",
+                "Now, let's create a new page called \"demo_session1.php\". In this page, we start a new PHP session and set some session variables:",
+                "$code<?php // Start the session session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Set session variables $_SESSION[\"favcolor\"] = \"green\"; $_SESSION[\"favanimal\"] = \"cat\"; echo \"Session variables are set.\"; ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            },
+            {
+              "id": 8003,
+              "title": "Get PHP Session Variable Values",
+              "description": [
+                "Next, we create another page called \"demo_session2.php\". From this page, we will access the session information we set on the first page (\"demo_session1.php\").",
+                "Notice that session variables are not passed individually to each new page, instead they are retrieved from the session we open at the beginning of each page (<span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\">session_start()</span>).",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Echo session variables that were set on previous page echo \"Favorite color is \" . $_SESSION[\"favcolor\"] . \".<br>\"; echo \"Favorite animal is \" . $_SESSION[\"favanimal\"] . \".\"; ?> </body> </html>"
+              ],
+              "difficulty": "MEDIUM",
+              "periodToComplete": 10
+            }
+          ]
+        },
+        {
+          "id": 5001,
+          "title": "PHP Session Advanced",
+          "description": "Advanced tricks with PHP sessions.",
+          "lessons": [
+            {
+              "id": 8005,
+              "title": "Modify a PHP Session Variable",
+              "description": [
+                "To change a session variable, just overwrite it:",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // to change a session variable, just overwrite it $_SESSION[\"favcolor\"] = \"yellow\"; print_r($_SESSION); ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            },
+            {
+              "id": 8006,
+              "title": "Destroy a PHP Session",
+              "description": [
+                "To remove all global session variables and destroy the session, use <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_unset()</span> and <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_destroy()</span>:",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // remove all session variables session_unset(); // destroy the session session_destroy(); ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            }
+          ]
+        },
+        {
+          "id": 5002,
+          "title": "Authentication Exemple",
+          "description": "After we learned how to manage sessions in PHP, we are going to apply what we learned in a simple exemple which is user authentication",
+          "lessons": [
+            {
+              "id": 8008,
+              "title": "User Authentication",
+              "description": [
+                "In this exemple we will try to give you the steps and you do it on your own to test yourself. You can always click the help button to see the final code but try to avoid it:",
+                "1. Create login.html and create a login form in this page with user & password.",
+                "2. Set form method to POST and form action to login.php",
+                "3. In login.php created an array of users with username and password. You can create a one user in single varible as well",
+                "4. Check if submitted data corresponds to what you have in your login.php",
+                "5. If user entred valid data, save it in a session & display his name",
+                "6. create another php file called auth.php, where only if user is availabe in the session can view it's content otherwise redirect him to login.html"
+              ],
+              "difficulty": "MEDIUM",
+              "periodToComplete": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "name": "PHP sessions for beginners",
+      "description": "PHP course for learning sessions managment with some tips and tricks that will help you in your PHP carrer. This course contain 3 modules with beginner level.",
+      "teacher": {
+        "id": 2000,
+        "name": "Ali Amor",
+        "university": "ISET Sousse",
+        "description": "Matster degree student in software engeneering and fast apps developpment",
+        "avatar": "assets/avatar/male2.svg",
+        "courses": [],
+        "email": "alibenamor30@gmail.com"
+      },
+      "version": "1.0.1",
+      "cover": "https://www.educative.io/cdn-cgi/image/f=auto,fit=cover,w=600/v2api/collection/10370001/5669965877215232/image/5493020851961856",
+      "lastUpdate": "01/04/2022",
+      "chapters": [
+        {
+          "id": 5000,
+          "title": "PHP Session basics",
+          "description": "Start learning PHP basics for session managment, session creation, update, reset",
+          "lessons": [
+            {
+              "id": 8000,
+              "title": "Introduction",
+              "description": ["In this lessons we are going to define what is a session?, why sessions are important ?, where we use them?"],
+              "difficulty": "EASY",
+              "periodToComplete": 2
+            },
+            {
+              "id": 8001,
+              "title": "What is a session?",
+              "description": [
+                "When you work with an application, you open it, do some changes, and then you close it. This is much like a Session. The computer knows who you are. It knows when you start the application and when you end. But on the internet there is one problem: the web server does not know who you are or what you do, because the HTTP address doesn't maintain state.",
+                "Session variables solve this problem by storing user information to be used across multiple pages (e.g. username, favorite color, etc). By default, session variables last until the user closes the browser.",
+                "So; Session variables hold information about one single user, and are available to all pages in one application."
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 3
+            },
+            {
+              "id": 8002,
+              "title": "Start a PHP Session",
+              "description": [
+                "A session is started with the <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_start() </span> function.",
+                "Session variables are set with the PHP global variable: $_SESSION.",
+                "Now, let's create a new page called \"demo_session1.php\". In this page, we start a new PHP session and set some session variables:",
+                "$code<?php // Start the session session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Set session variables $_SESSION[\"favcolor\"] = \"green\"; $_SESSION[\"favanimal\"] = \"cat\"; echo \"Session variables are set.\"; ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            },
+            {
+              "id": 8003,
+              "title": "Get PHP Session Variable Values",
+              "description": [
+                "Next, we create another page called \"demo_session2.php\". From this page, we will access the session information we set on the first page (\"demo_session1.php\").",
+                "Notice that session variables are not passed individually to each new page, instead they are retrieved from the session we open at the beginning of each page (<span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\">session_start()</span>).",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Echo session variables that were set on previous page echo \"Favorite color is \" . $_SESSION[\"favcolor\"] . \".<br>\"; echo \"Favorite animal is \" . $_SESSION[\"favanimal\"] . \".\"; ?> </body> </html>"
+              ],
+              "difficulty": "MEDIUM",
+              "periodToComplete": 10
+            }
+          ]
+        },
+        {
+          "id": 5001,
+          "title": "PHP Session Advanced",
+          "description": "Advanced tricks with PHP sessions.",
+          "lessons": [
+            {
+              "id": 8005,
+              "title": "Modify a PHP Session Variable",
+              "description": [
+                "To change a session variable, just overwrite it:",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // to change a session variable, just overwrite it $_SESSION[\"favcolor\"] = \"yellow\"; print_r($_SESSION); ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            },
+            {
+              "id": 8006,
+              "title": "Destroy a PHP Session",
+              "description": [
+                "To remove all global session variables and destroy the session, use <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_unset()</span> and <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_destroy()</span>:",
+                "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // remove all session variables session_unset(); // destroy the session session_destroy(); ?> </body> </html>"
+              ],
+              "difficulty": "EASY",
+              "periodToComplete": 5
+            }
+          ]
+        },
+        {
+          "id": 5002,
+          "title": "Authentication Exemple",
+          "description": "After we learned how to manage sessions in PHP, we are going to apply what we learned in a simple exemple which is user authentication",
+          "lessons": [
+            {
+              "id": 8008,
+              "title": "User Authentication",
+              "description": [
+                "In this exemple we will try to give you the steps and you do it on your own to test yourself. You can always click the help button to see the final code but try to avoid it:",
+                "1. Create login.html and create a login form in this page with user & password.",
+                "2. Set form method to POST and form action to login.php",
+                "3. In login.php created an array of users with username and password. You can create a one user in single varible as well",
+                "4. Check if submitted data corresponds to what you have in your login.php",
+                "5. If user entred valid data, save it in a session & display his name",
+                "6. create another php file called auth.php, where only if user is availabe in the session can view it's content otherwise redirect him to login.html"
+              ],
+              "difficulty": "MEDIUM",
+              "periodToComplete": 15
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": 5000,
+      "title": "PHP Session basics",
+      "description": "Start learning PHP basics for session managment, session creation, update, reset",
+      "lessons": [
+        {
+          "id": 8000,
+          "title": "Introduction",
+          "description": ["In this lessons we are going to define what is a session?, why sessions are important ?, where we use them?"],
+          "difficulty": "EASY",
+          "periodToComplete": 2
+        },
+        {
+          "id": 8001,
+          "title": "What is a session?",
+          "description": [
+            "When you work with an application, you open it, do some changes, and then you close it. This is much like a Session. The computer knows who you are. It knows when you start the application and when you end. But on the internet there is one problem: the web server does not know who you are or what you do, because the HTTP address doesn't maintain state.",
+            "Session variables solve this problem by storing user information to be used across multiple pages (e.g. username, favorite color, etc). By default, session variables last until the user closes the browser.",
+            "So; Session variables hold information about one single user, and are available to all pages in one application."
+          ],
+          "difficulty": "EASY",
+          "periodToComplete": 3
+        },
+        {
+          "id": 8002,
+          "title": "Start a PHP Session",
+          "description": [
+            "A session is started with the <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_start() </span> function.",
+            "Session variables are set with the PHP global variable: $_SESSION.",
+            "Now, let's create a new page called \"demo_session1.php\". In this page, we start a new PHP session and set some session variables:",
+            "$code<?php // Start the session session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Set session variables $_SESSION[\"favcolor\"] = \"green\"; $_SESSION[\"favanimal\"] = \"cat\"; echo \"Session variables are set.\"; ?> </body> </html>"
+          ],
+          "difficulty": "EASY",
+          "periodToComplete": 5
+        },
+        {
+          "id": 8003,
+          "title": "Get PHP Session Variable Values",
+          "description": [
+            "Next, we create another page called \"demo_session2.php\". From this page, we will access the session information we set on the first page (\"demo_session1.php\").",
+            "Notice that session variables are not passed individually to each new page, instead they are retrieved from the session we open at the beginning of each page (<span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\">session_start()</span>).",
+            "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Echo session variables that were set on previous page echo \"Favorite color is \" . $_SESSION[\"favcolor\"] . \".<br>\"; echo \"Favorite animal is \" . $_SESSION[\"favanimal\"] . \".\"; ?> </body> </html>"
+          ],
+          "difficulty": "MEDIUM",
+          "periodToComplete": 10
+        }
+      ]
+    },
+    {
+      "id": 5001,
+      "title": "PHP Session Advanced",
+      "description": "Advanced tricks with PHP sessions.",
+      "lessons": [
+        {
+          "id": 8005,
+          "title": "Modify a PHP Session Variable",
+          "description": [
+            "To change a session variable, just overwrite it:",
+            "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // to change a session variable, just overwrite it $_SESSION[\"favcolor\"] = \"yellow\"; print_r($_SESSION); ?> </body> </html>"
+          ],
+          "difficulty": "EASY",
+          "periodToComplete": 5
+        },
+        {
+          "id": 8006,
+          "title": "Destroy a PHP Session",
+          "description": [
+            "To remove all global session variables and destroy the session, use <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_unset()</span> and <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_destroy()</span>:",
+            "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // remove all session variables session_unset(); // destroy the session session_destroy(); ?> </body> </html>"
+          ],
+          "difficulty": "EASY",
+          "periodToComplete": 5
+        }
+      ]
+    },
+    {
+      "id": 5002,
+      "title": "Authentication Exemple",
+      "description": "After we learned how to manage sessions in PHP, we are going to apply what we learned in a simple exemple which is user authentication",
+      "lessons": [
+        {
+          "id": 8008,
+          "title": "User Authentication",
+          "description": [
+            "In this exemple we will try to give you the steps and you do it on your own to test yourself. You can always click the help button to see the final code but try to avoid it:",
+            "1. Create login.html and create a login form in this page with user & password.",
+            "2. Set form method to POST and form action to login.php",
+            "3. In login.php created an array of users with username and password. You can create a one user in single varible as well",
+            "4. Check if submitted data corresponds to what you have in your login.php",
+            "5. If user entred valid data, save it in a session & display his name",
+            "6. create another php file called auth.php, where only if user is availabe in the session can view it's content otherwise redirect him to login.html"
+          ],
+          "difficulty": "MEDIUM",
+          "periodToComplete": 15
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": 8000,
+      "title": "Introduction",
+      "description": ["In this lessons we are going to define what is a session?, why sessions are important ?, where we use them?"],
+      "difficulty": "EASY",
+      "periodToComplete": 2
+    },
+    {
+      "id": 8001,
+      "title": "What is a session?",
+      "description": [
+        "When you work with an application, you open it, do some changes, and then you close it. This is much like a Session. The computer knows who you are. It knows when you start the application and when you end. But on the internet there is one problem: the web server does not know who you are or what you do, because the HTTP address doesn't maintain state.",
+        "Session variables solve this problem by storing user information to be used across multiple pages (e.g. username, favorite color, etc). By default, session variables last until the user closes the browser.",
+        "So; Session variables hold information about one single user, and are available to all pages in one application."
+      ],
+      "difficulty": "EASY",
+      "periodToComplete": 3
+    },
+    {
+      "id": 8002,
+      "title": "Start a PHP Session",
+      "description": [
+        "A session is started with the <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_start() </span> function.",
+        "Session variables are set with the PHP global variable: $_SESSION.",
+        "Now, let's create a new page called \"demo_session1.php\". In this page, we start a new PHP session and set some session variables:",
+        "$code<?php // Start the session session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Set session variables $_SESSION[\"favcolor\"] = \"green\"; $_SESSION[\"favanimal\"] = \"cat\"; echo \"Session variables are set.\"; ?> </body> </html>"
+      ],
+      "difficulty": "EASY",
+      "periodToComplete": 5
+    },
+    {
+      "id": 8003,
+      "title": "Get PHP Session Variable Values",
+      "description": [
+        "Next, we create another page called \"demo_session2.php\". From this page, we will access the session information we set on the first page (\"demo_session1.php\").",
+        "Notice that session variables are not passed individually to each new page, instead they are retrieved from the session we open at the beginning of each page (<span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\">session_start()</span>).",
+        "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // Echo session variables that were set on previous page echo \"Favorite color is \" . $_SESSION[\"favcolor\"] . \".<br>\"; echo \"Favorite animal is \" . $_SESSION[\"favanimal\"] . \".\"; ?> </body> </html>"
+      ],
+      "difficulty": "MEDIUM",
+      "periodToComplete": 10
+    },
+    {
+      "id": 8005,
+      "title": "Modify a PHP Session Variable",
+      "description": [
+        "To change a session variable, just overwrite it:",
+        "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // to change a session variable, just overwrite it $_SESSION[\"favcolor\"] = \"yellow\"; print_r($_SESSION); ?> </body> </html>"
+      ],
+      "difficulty": "EASY",
+      "periodToComplete": 5
+    },
+    {
+      "id": 8006,
+      "title": "Destroy a PHP Session",
+      "description": [
+        "To remove all global session variables and destroy the session, use <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_unset()</span> and <span class=\"bg-skin-base-secondary-300 dark:bg-skin-base-inverted-secondary-300 text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600\"> session_destroy()</span>:",
+        "$code<?php session_start(); ?> <!DOCTYPE html> <html> <body> <?php // remove all session variables session_unset(); // destroy the session session_destroy(); ?> </body> </html>"
+      ],
+      "difficulty": "EASY",
+      "periodToComplete": 5
+    },
+    {
+      "id": 8008,
+      "title": "User Authentication",
+      "description": [
+        "In this exemple we will try to give you the steps and you do it on your own to test yourself. You can always click the help button to see the final code but try to avoid it:",
+        "1. Create login.html and create a login form in this page with user & password.",
+        "2. Set form method to POST and form action to login.php",
+        "3. In login.php created an array of users with username and password. You can create a one user in single varible as well",
+        "4. Check if submitted data corresponds to what you have in your login.php",
+        "5. If user entred valid data, save it in a session & display his name",
+        "6. create another php file called auth.php, where only if user is availabe in the session can view it's content otherwise redirect him to login.html"
+      ],
+      "difficulty": "MEDIUM",
+      "periodToComplete": 15
+    }
+  ]
+}
