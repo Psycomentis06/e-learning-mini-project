@@ -15,7 +15,7 @@
         <input type="text" placeholder="Filter courses" #textFilterInput (keyup)="search(textFilterInput.value)" class="w-1/4  px-3 py-2 rounded-md outline outline-2 outline-skin-base-primary-500 dark:outline-skin-base-inverted-primary-500 focus:outline-skin-base-primary-500 dark:focus:outline-skin-base-inverted-primary-500  focus:outline-2">
     </div>
     <div class="container flex justify-around">
-        <div  *ngFor="let c of courses" class="w-[300px] h-[400px] group  bg-skin-base-secondary-200 dark:bg-skin-base-inverted-secondary-200 shadow-md rounded-lg transition duration-200" >
+        <div  *ngFor="let c of courses" class="mx-6 w-[300px] h-[400px] group  bg-skin-base-secondary-200 dark:bg-skin-base-inverted-secondary-200 shadow-md rounded-lg transition duration-200" >
             <img [src]="c.cover" [alt]="c.name + ' cover image' " class="w-full h-[150px] object-cover rounded-lg grayscale-0 group-hover:grayscale transition duration-200" >
             <div class="px-2 py-1">
                 <h1 class="text-skin-base-primary-600 dark:text-skin-base-inverted-primary-600 font-nanum-gothic font-semibold text-xl"> {{c.name}} </h1>
